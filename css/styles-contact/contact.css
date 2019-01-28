@@ -1,0 +1,241 @@
+@import url('theme-night-contact.css');
+@import url('theme-dark-contact.css');
+
+/* Imágenes slider contacto */
+.ctn-slider .slider .section-slider .slider-one-contact {
+	background-image: url('../../imgs/imgs-general/sliders/slider-contact/contact-1.jpg');
+}
+
+.ctn-slider .slider .section-slider .slider-two-contact {
+	background-image: url('../../imgs/imgs-general/sliders/slider-contact/contact-2.jpg');
+}
+
+.ctn-slider .slider .section-slider .slider-three-contact {
+	background-image: url('../../imgs/imgs-general/sliders/slider-contact/contact-3.jpg');
+}
+
+.ctn-slider .slider .section-slider .slider-four-contact {
+	background-image: url('../../imgs/imgs-general/sliders/slider-contact/contact-4.jpg');
+}
+
+.ctn-slider .slider .section-slider .slider-five-contact {
+	background-image: url('../../imgs/imgs-general/sliders/slider-contact/contact-5.jpg');
+}
+
+/* Mensaje formulario correcto */
+.form-correct {
+	background-color: #cfffcf;
+	border-radius: 10px;
+	box-shadow: 0 0 0 1px #00b500,
+							0 0 1px #000000 inset;
+	font-family: 'montserrat', sans-serif;
+	margin: 50px 20% 0;
+	padding: 1em;
+}
+
+/* Contenedor título y botón de cerrar mensaje de formulario contacto */
+.form-correct .ctn-title-btn-close-form-correct {
+	justify-content: space-between;
+}
+
+/* Título mensaje de formulario correcto */
+.form-correct .ctn-title-btn-close-form-correct .title-form-correct {
+	color: #0a9e00;
+	font-size: 1em;
+	letter-spacing: 0.5px;
+	margin-bottom: 10px;
+}
+
+/* Botón de cerrar mensaje de formulario correcto */
+.form-correct .ctn-title-btn-close-form-correct .btn-close-form-correct {
+	color: #83c53d;
+	font-size: 14px;
+	height: 14px;
+	transition: color 0.3s ease-out;
+	width: 14px;
+}
+
+.form-correct .ctn-title-btn-close-form-correct .btn-close-form-correct:hover,
+.form-correct .ctn-title-btn-close-form-correct .btn-close-form-correct:focus,
+.form-correct .ctn-title-btn-close-form-correct .btn-close-form-correct:active {
+	color: #55c151;
+}
+
+/* Contenido mensaje formulario correcto */
+.form-correct .content-form-correct {
+	color: #279e27;
+	font-size: 12px;
+}
+
+/* Formulario de contacto */
+.ctn-form-contact .form-contact {
+	margin: 0 20%;
+	padding: 50px 0;
+}
+
+/* Título formulario de contacto */
+.ctn-form-contact .form-contact .title-form-contact {
+ 	font: bold 2em 'dancing-script', sans-serif;
+	margin-bottom: 50px;
+}
+
+/* Contenedor inputs formulario de contacto */
+.ctn-form-contact .form-contact .ctn-inputs {
+	margin-bottom: 50px;
+}
+
+/* Contenedor inputs para los que van 2 en la misma columna formulario de contacto */
+.ctn-form-contact .form-contact .ctn-middle {
+	margin-right: 10px;
+	width: calc(49% - 10px);
+}
+
+/* Estilo del autocompletar en los inputs formulario de contacto */
+.ctn-form-contact .form-contact .ctn-inputs .effect-input:-webkit-autofill,
+.ctn-form-contact .form-contact .ctn-inputs .effect-input:-webkit-autofill:hover,
+.ctn-form-contact .form-contact .ctn-inputs .effect-input:-webkit-autofill:focus,
+.ctn-form-contact .form-contact .ctn-inputs .effect-input:-webkit-autofill:active {
+	box-shadow: 0 0 0 1000px #f2f2f2 inset;
+}
+
+/* Labels formulario de contacto */
+.ctn-form-contact .form-contact .ctn-inputs .support-text-form-contact {
+	color: #999999;
+	font-size: 14px;
+	left: 5px;
+	pointer-events: none;
+	top: 10px;
+	transition: color 0.3s ease,
+	            font-size 0.3s ease,
+	            top 0.3s ease;
+}
+
+/* Efecto labels cuando el input esta en estado focus o valido Formulario de contacto */
+.ctn-form-contact .form-contact .ctn-inputs .support-text-form-contact.active-input-form-contact {
+	color: #505050;
+	font-size: 12px;
+	top: -20px;
+}
+
+/* Inputs formulario contacto */
+.ctn-form-contact .form-contact .ctn-inputs .effect-input {
+	border-bottom: 1px solid #a4a4a4;
+	font-family: 'montserrat', sans-serif;
+	letter-spacing: 1px;
+	padding: 1em 20px 1em 5px;
+	text-transform: lowercase;
+}
+
+/* Input de los nombres */
+#nombre_contacto {
+	text-transform: capitalize;
+}
+
+/* Estilos de los inputs del formulario de contacto cuando esten invalidos */
+.ctn-form-contact .form-contact .ctn-inputs .validate-input:invalid {
+	border-bottom-color: #f53535;
+}
+
+/* Barra de los inputs para el efecto formulario de contacto */
+.ctn-form-contact .form-contact .ctn-inputs .bar-input-effect:before {
+	background-color: #000000;
+	bottom: 0;
+	height: 2px;
+	transition: width 0.3s ease;
+	width: 0;
+}
+
+/* Estilos de la línea inferior sobre la que esta la letra de los inputs del formulario de contacto cuando esten invalidos */
+.ctn-form-contact .form-contact .ctn-inputs .validate-input:invalid + .bar-input-effect:before {
+	background-color: #f53535;
+}
+
+/* Efecto en la barra para cuando el input esta en estado focus o valido */
+.ctn-form-contact .form-contact .ctn-inputs .bar-input-effect.active-input-form-contact:before {
+	width: 100%;
+}
+
+/* Icono limpiar input formulario de contacto */
+.ctn-form-contact .form-contact .ctn-inputs .bar-input-effect .clear-input-icon {
+	bottom: 1rem;
+	font-size: 12px;
+	right: 1%;
+}
+
+/* Efecto hover al icono de limpiar input formulario de contacto */
+.ctn-form-contact .form-contact .ctn-inputs .bar-input-effect .clear-input-icon:hover,
+.ctn-form-contact .form-contact .ctn-inputs .bar-input-effect .clear-input-icon:focus,
+.ctn-form-contact .form-contact .ctn-inputs .bar-input-effect .clear-input-icon:active {
+	color: #4a4a4a;
+}
+
+/* Icono limpiar input formulario de contacto cuando esten invalidos */
+.ctn-form-contact .form-contact .ctn-inputs .validate-input:invalid + .bar-input-effect .clear-input-icon {
+	color: #f15555;
+}
+
+/* Efecto hover al icono limpiar input formulario de contacto cuando esten invalidos */
+.ctn-form-contact .form-contact .ctn-inputs .validate-input:invalid + .bar-input-effect .clear-input-icon:hover,
+.ctn-form-contact .form-contact .ctn-inputs .validate-input:invalid + .bar-input-effect .clear-input-icon:focus,
+.ctn-form-contact .form-contact .ctn-inputs .validate-input:invalid + .bar-input-effect .clear-input-icon:active {
+	color: #f14040;
+}
+
+/* Texto indicativo del error del input */
+.ctn-form-contact .form-contact .ctn-inputs .error-input-form-contact {
+	color: #f35252;
+	font-size: 12px;
+	line-height: 15px;
+	top: 5px;
+}
+
+.ctn-form-contact .form-contact .ctn-btns-form-contact {
+	justify-content: space-around;
+}
+
+/* Imágen contacto y contáctanos */
+.ctn-form-contact .img-contact,
+.ctn-contact-us {
+	padding: 50px 0;
+}
+
+/* Contenedor caja de contáctanos */
+.ctn-contact-us .ctn-box-contact-us {
+	margin: 20px 0;
+}
+
+/* Color links contáctanos */
+.ctn-contact-us .ctn-box-contact-us .link-contact-us {
+	color: #1c1c1c;
+}
+
+/* Icono contáctanos */
+.ctn-contact-us .ctn-box-contact-us .icon-contact-us {
+	background-color: #e8e8e8;
+	box-shadow: 1px 1px 5px #bbbbbb;
+	color: #505050;
+	font-size: 2em;
+	line-height: 150px;
+	margin-bottom: 20px;
+	text-shadow: 1px 1px 1px #ffffff;
+	transition: box-shadow 0.3s ease;
+	width: 150px;
+}
+
+/* Efecto hover icono contáctanos */
+.ctn-contact-us .ctn-box-contact-us .icon-contact-us:hover,
+.ctn-contact-us .ctn-box-contact-us .icon-contact-us:focus,
+.ctn-contact-us .ctn-box-contact-us .icon-contact-us:active {
+	box-shadow: 3px 3px 0 1px #bbbbbb;
+}
+
+/* Título contáctanos */
+.ctn-contact-us .ctn-box-contact-us .title-contact-us {
+	font: normal 2em 'dancing-script', sans-serif;
+	margin-bottom: 10px;
+}
+
+/* Cotenido contáctanos */
+.ctn-contact-us .ctn-box-contact-us .content-contact-us {
+	font-family: 'montserrat', sans-serif;
+}

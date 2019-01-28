@@ -1,0 +1,283 @@
+/* Responsive max-width and min-width */
+@media only screen and (min-width: 761px) and (max-width: 960px) {
+	/* Títulos del slider */
+	.ctn-slider .slider .section-slider .title-slider {
+		font-size: 3em;
+	}
+}
+
+@media only screen and (min-width: 501px) and (max-width: 760px) {
+	/* Títulos del slider */
+	.ctn-slider .slider .section-slider .title-slider {
+		font-size: 2em;
+	}
+}
+
+/* Respnsive max-width */
+@media screen and (max-width: 900px) {
+	.menu-flex .menu {
+		flex-direction: column;
+	}
+
+	/* Logo menú */
+	.menu-flex .menu .logo-menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 1em 0;
+		width: 100%;
+	}
+
+	/* Bóton hamburguer */
+	.menu-flex .menu .logo-menu .btn-menu {
+		display: block;
+	}
+  
+  /* Links menú */
+	.menu-flex .menu .enlaces {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		height: 0;
+		justify-content: space-around;
+		overflow: hidden;
+		transition: height 0.3s linear;
+		width: 100%;
+	}
+
+	/* Altura enlaces para el efecto slide */
+	.menu-flex .menu .enlaces.active {
+		height: 70px;
+	}
+
+	.menu-flex .menu .enlaces .links-menu {
+		margin: 10px;
+	}
+
+	/* Contenedor icono paleta de colores y contenedor paleta de colores */
+	.copyright-and-social .social-icons-footer .ctn-icon-palette-colors,
+	.copyright-and-social .social-icons-footer .ctn-paletts-colors {
+		display: none;
+	}
+
+	/* Formulario de contacto e imágen del formulario contacto */
+	.ctn-form-contact .img-contact,
+	.ctn-form-contact .form-contact {
+		padding: 20px 0;
+	}
+
+	/* Validación desde jquery para que cuando esten llenando el formulario se oculte el footer del mobil y el botón de ir arriba */
+	.hide-footer-mobil,
+	.btn-go-to-up {
+		display: none;
+	}	
+}
+
+@media screen and (max-width: 794px) {
+	/* Altura enlaces para el efecto slide */
+	.menu-flex .menu .enlaces.active {
+		height: 140px;
+	}
+}
+
+/* Tamaño de portatil hacia atras (portatil, tablet, celular) */
+@media screen and (max-width: 767px) {
+	/* Preloader */
+	/* Spinner cargando */	
+	.ctn-preloader .animation-preloader .spinner {
+		height: 8em;
+		width: 8em;
+	}
+
+	/* Texto cargando */
+	.ctn-preloader .animation-preloader .txt-loading {
+	  font: bold 3.5em 'montserrat', sans-serif;
+	}
+
+	/* Sección servicios iconos */
+	.section-services .link-icon-section-services {
+		right: 5px;
+	}
+
+	/* Modales */
+	/* Inicialmente el modal para que cuando se le agregue por jquery "show-modal" apararezca */
+	.modal {
+		transform-origin: right;
+		transform: perspective(500px) rotateY(-90deg);
+		transition: opacity 1s ease,
+	            	transform 1s ease,
+	            	transform-origin 1s ease;
+	}
+
+	/* Estilo del scroll para los modales */
+	.show-modal::-webkit-scrollbar {
+		width: 2px;
+	}
+
+	/* Efecto para cuando se muestre el modal */
+	.show-modal {
+		transform: perspective(500px) rotateY(0deg);
+	}
+
+	.modal .ctn-modal {
+		margin: 10px;
+		width: auto;
+	}
+
+	.modal .ctn-modal .modal-content .modal-body .content-modal,
+	.modal .ctn-modal .modal-content .modal-body .ctn-list-modal .list-modal-whithout-title {
+		font-size: 14px;
+	}
+
+	/* Footer pc centrar contenido */
+	.footer-pc .col-footer-pc {
+		text-align: center;
+	}
+
+	/* Sección copy-right y redes sociales */
+	.ctn-content-footer {
+		float: none !important;
+	}
+
+	.copyright-and-social .copyright-text {
+		text-align: center;
+	}
+
+	.copyright-and-social .social-icons-footer {
+		float: none;
+    padding-top: 10px;
+    text-align: center;
+	}
+
+  /* Mensaje formulario correcto, formulario contacto */
+  .form-correct,
+	.ctn-form-contact .form-contact {
+		margin: 5% 0;
+	}
+
+	/* Título formulario de contacto */
+  .ctn-form-contact .form-contact .title-form-contact {
+		font-size: 1.5em;
+  }
+
+	/* Labels formulario de contacto */
+	.ctn-form-contact .form-contact .ctn-inputs .support-text-form-contact,
+  .ctn-form-contact .form-contact .ctn-inputs .support-text-form-contact.active-input-form-contact {
+    font-size: 12px;
+	}
+
+	/* Contenedor inputs para los que van 2 en la misma columna formulario de contacto */
+	.ctn-form-contact .form-contact .ctn-middle {
+		width: 100%;
+	}
+
+	/* Página soporte*/
+	/* Botón cambiar columnas soporte */
+	.ctn-icon-col-support {
+		display: none;
+	}
+
+	/* Navegación por tabs soporte */
+	.navegation-tabs {
+		width: 95%;
+	}
+}
+
+/* Responsive flechas, título del slider y modales */
+@media screen and (max-width: 500px) {
+	/* Prelaoder */
+	/* Spinner cargando */
+	.ctn-preloader .animation-preloader .spinner {
+		height: 7em;
+		width: 7em;
+	}
+
+	/* Texto cargando */
+	.ctn-preloader .animation-preloader .txt-loading {
+	  font: bold 2em 'montserrat', sans-serif;
+	}	
+
+	/* Títulos del slider */
+	.ctn-slider .slider .section-slider .title-slider {
+		font-size: 1.5em;
+	}
+
+  /* Ancho del scroll en los textarea */
+	textarea::-webkit-scrollbar {
+	  width: 3px;
+  }
+
+  /* Modal temas */
+	#modal-themes .ctn-modal {
+		width: 15em;
+	}
+	
+	/* Modal tarjeta de presentación */
+	.modal .card-presentation .front-card-presentation .close-card-presentation,
+	.modal .card-presentation .back-card-presentation .close-card-presentation {
+		right: 10px;
+		top: 10px;
+	}
+
+	.modal .card-presentation .back-card-presentation {
+		padding: 25px;
+	}
+
+	.modal .card-presentation .back-card-presentation .back-content-card-presentation .title-back-content-card-presentation {
+		font-size: 1em;
+		top: 3%;
+	}
+
+	.modal .card-presentation .back-card-presentation .back-content-card-presentation .skills-creator-card-presentation {
+		line-height: 20px;
+	}
+}
+
+/* Responsive min-width */
+@media screen and (min-width: 992px) {
+	.section-services .container .row-service {
+		margin-bottom: 50px;
+	}
+
+	/* Botón de cambiar columnas en la página servicios */
+	.section-services .ctn-icon-col-service {
+		display: block;
+	}
+}
+
+/* Reponsive footer-mobil e imágen contacto (Validación para que solo aparezca desde el tamaño portatil, tablet, celular) */
+@media screen and (min-width: 901px) {
+	.footer-mobil {
+		display: none;
+	}
+
+	.ctn-form-contact .img-contact {
+		height: 700px;
+	}
+}
+
+@media screen and (max-width: 492px) {
+	/* Altura enlaces para el efecto slide */
+	.menu-flex .menu .enlaces.active {
+		height: 210px;
+	}
+
+	/* Burbujas footer-mobile */
+	.footer-mobil .social-media .link-social-media,
+	.footer-mobil .social-media .btn-go-to-up-footer {
+		font-size: 20px;
+		height: 40px;
+		line-height: 1.5em;
+		width: 40px;
+	}
+
+	/* Efectos para el botón "+" de deslizar las redes */
+	/* Efecto en el botón plus para cuando muestra el footer-mobile */
+	.footer-mobil .footer-mobile-btn-plus-no-expand {
+		bottom: 50px;
+	}
+
+	.footer-mobil .footer-mobile-btn-plus-expand {
+		bottom: 0.5em;
+	}
+}

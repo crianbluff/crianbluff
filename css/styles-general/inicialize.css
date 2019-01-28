@@ -1,0 +1,677 @@
+/* Z-index */
+/* Preloader: 900 */
+/* Modals: 800 */
+/* Header: 700 */
+/* Slider: 600 */
+/* Flechas slider: 600 */
+/* Flechas slider siguiente sección: 600 */
+/* Footer mobile: 500 */
+/* Botón + footer mobile: 500 */
+
+/* Linkeado de fuentes para la letra */
+@font-face {
+	font-family: 'dancing-script';
+	src: url('../../fonts/letters/dancing-script/dancing-script-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'montserrat';
+	src: url('../../fonts/letters/montserrat/montserrat-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'nunito-sans';
+	src: url('../../fonts/letters/nunito-sans/nunito-sans-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'poiret-one';
+	src: url('../../fonts/letters/poiret-one/poiret-one-regular.ttf') format('truetype');
+}
+
+/* Efecto del fondo cuando se hace tap en mobil o tablet */
+html {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*:before,
+*,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Seleccion del texto */
+*::selection {
+	background-color: #e44646;
+	color: #ffffff;
+}
+
+*::-moz-selection {
+	background-color: #e44646;
+	color: #ffffff;
+}
+
+*:focus {
+	outline: 0;
+}
+
+/* Barra de scroll */
+body::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Contenedor barra de scroll */
+body::-webkit-scrollbar-thumb {
+	background-color: rgba(70, 70, 70, 0.4);
+	box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2) inset,
+							0 -1px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+body {
+	background-color: #f2f2f2;
+  cursor: url('../../imgs/imgs-general/cursors/default/cursor-default-black.png'), default; /* Cursor personalizado por defecto */
+	font: normal 1em 'nunito-sans', sans-serif;
+	overflow-x: hidden; 
+}
+
+a {
+	cursor: url('../../imgs/imgs-general/cursors/pointer/cursor-pointer.png'), pointer; /* Cursor personalizado pointer */
+	text-decoration: none;
+}
+
+a:visited {
+	/* Definir un color para reconocer los links visitados */
+	/*color: #ff0000;*/
+}
+
+input,
+textarea,
+button {
+	background-color: rgba(0, 0, 0, 0);
+	border-style: none;
+	cursor: url('../../imgs/imgs-general/cursors/pointer/cursor-pointer.png'), pointer; /* Cursor personalizado pointer */
+	font-size: 1em;
+}
+
+/* Estilo del autocompletar en los inputs */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	/*box-shadow: 0 0 0 1000px #000000 inset;
+	text-fill-color: #ffffff;*/
+}
+
+/* Estilo del scroll para los textarea */
+textarea::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Contenedor barra de scroll para los textarea */
+textarea::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1) inset,
+							0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+}
+
+textarea {
+	height: 100px;
+	line-height: 20px;
+	resize: none;
+}
+
+/* Para que todas las imagenes no se les pueda hacer select ni las etiquetas "i" que empiecen por "fa" osea iconos */
+img,
+i[class^="fa"] {
+	user-select: none;
+}
+
+img {
+	pointer-events: none;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Clases personalizadas */
+/* Color de fondo de las redes sociales y color de fondos personalizados */
+.bgcolor-facebook {
+	background-color: #3b5998;
+}
+
+.bgcolor-github {
+	background-color: #000000;
+}
+
+.bgcolor-google-plus {
+	background-color: #dd4b39;
+}
+
+.bgcolor-instagram {
+	background-color: #cd486b;
+}
+
+.bgcolor-linkedin {
+	background-color: #007bb5;
+}
+
+.bgcolor-pinterest {
+	background-color: #cb2027;
+}
+
+.bgcolor-rss {
+	background-color: #ff4500;
+}
+
+.bgcolor-skype {
+	background-color: #00aff0;
+}
+
+.bgcolor-snapchat {
+	background-color: #fffc00;
+}
+
+.bgcolor-spotify {
+	background-color: #00e461;
+}
+
+.bgcolor-transparent {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.bgcolor-tumblr {
+	background-color: #32506d;
+}
+
+.bgcolor-twitter {
+	background-color: #55acee;
+}
+
+.bgcolor-whatsapp {
+	background-color: #25d366;
+}
+
+.bgcolor-youtube {
+	background-color: #ff0000;
+}
+
+.bgcolor-white {
+	background-color: #ffffff;
+}
+
+/* Border radius */
+.radius {
+	border-radius: 50%;
+}
+
+/* Color de las redes sociales y colores personalizadas */
+.black {
+	color: #000000;
+}
+
+.gray-clear {
+	color: #cdcdcd;
+}
+
+.gray {
+	color: #7a7a7a;
+}
+
+.gray-dark {
+	color: #404040;
+}
+
+.color-facebook {
+	color: #3b5998;
+}
+
+.color-google-plus {
+	color: #dd4b39;
+}
+
+.color-instagram {
+	color: #cd486b;
+}
+
+.color-linkedin {
+	color: #007bb5;
+}
+
+.color-pinterest {
+	color: #cb2027;
+}
+
+.color-rss {
+	color: #ff4500;
+}
+
+.color-skype {
+	color: #00aff0;
+}
+
+.color-snapchat {
+	color: #fffc00;
+}
+
+.color-spotify {
+	color: #00e461;
+}
+
+.color-transparent {
+	color: rgba(0, 0, 0, 0);
+}
+
+.color-tumblr {
+	color: #32506d;
+}
+
+.color-twitter {
+	color: #55acee;
+}
+
+.color-whatsapp {
+	color: #25d366;
+}
+
+.white {
+	color: #ffffff;
+}
+
+.color-youtube {
+	color: #ff0000;
+}
+
+/* Cursor */
+.pointer {
+	cursor: url('../../imgs/imgs-general/cursors/pointer/cursor-pointer.png'), pointer; /* Cursor personalizado pointer */
+}
+
+/* Display */
+.show {
+	display: block;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-a {
+	align-items: center;
+	display: flex;
+}
+
+.flex-center {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.display-table {
+	display: table;
+}
+
+.hide {
+	display: none;
+}
+
+/* Fuente */
+.bold {
+	font-weight: bold;
+}
+
+/* Line height */
+.lh-25 {
+	line-height: 25px;
+}
+
+/* Margin */
+.margin-auto {
+	margin: 0 auto;
+}
+
+/* Scroll */
+.no-scroll-x {
+	overflow-x: hidden;
+}
+
+.no-scroll-y {
+  overflow-y: hidden;
+}
+
+/* Posición */
+.absolute {
+	position: absolute;	
+}
+
+.relative {
+	position: relative;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.absolute-lt-zero {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.absolute-lt-zero-hundred-porcent {
+	left: 0;
+	position: absolute;
+	top: 0;	
+	width: 100%;
+}
+
+.before,
+.after,
+.absolute-lt-zero-before,
+.absolute-lt-zero-hundred-porcent-before,
+.absolute-lt-zero-after,
+.absolute-lt-zero-hundred-porcent-after,
+.absolute-lt-zero-before-after {
+	position: relative;
+}
+
+.before:before,
+.after:after {
+	content: '';
+	position: absolute;
+}
+
+.absolute-lt-zero-before:before {
+	content: '';
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.absolute-lt-zero-hundred-porcent-before:before {
+	content: '';
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.absolute-lt-zero-after:after {
+	content: '';
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.absolute-lt-zero-hundred-porcent-after:after {
+	content: '';
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.absolute-lt-zero-before-after:before,
+.absolute-lt-zero-before-after:after {
+	content: '';
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.fixed-lt-zero-hundred-porcent {
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.relative-lt-zero {
+	left: 0;
+	position: relative;
+	top: 0;
+}
+
+/* Texto */
+.txt-center {
+	text-align: center;
+}
+
+.txt-justify {
+	text-align: justify;
+}
+
+.txt-upper-case {
+	text-transform: uppercase;
+}
+
+/* Ancho */
+.fifty-porcent {
+	width: 50%;
+}
+
+.one-hundred-porcent {
+	width: 100%;
+}
+
+/* No seleccionar texto */
+.no-select {
+	user-select: none;
+}
+
+/* Contenedor */
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+	content: '';
+	display: table;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+	margin: 0 -15px;
+}
+
+.row:after,
+.container:after {
+	clear: both;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.container {
+		max-width: 1425px;
+		padding: 0 90px;
+		width: 100%;
+	}
+}
+
+/* Columnas */
+div[class^="col"] {
+	float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+/* Columnas celular */
+.col-xs-1 {
+  width: 8.33333333%;
+}
+
+.col-xs-2 {
+  width: 16.66666667%;
+}
+
+.col-xs-3 {
+  width: 25%;
+}
+
+.col-xs-4 {
+  width: 33.33333333%;
+}
+
+.col-xs-5 {
+  width: 41.66666667%;
+}
+
+.col-xs-6 {
+  width: 50%;
+}
+
+.col-xs-7 {
+  width: 58.33333333%;
+}
+
+.col-xs-8 {
+  width: 66.66666667%;
+}
+
+.col-xs-9 {
+  width: 75%;
+}
+
+.col-xs-10 {
+  width: 83.33333333%;
+}
+
+.col-xs-11 {
+  width: 91.66666667%;
+}
+
+.col-xs-12 {
+  width: 100%;
+}
+
+/* Columnas tablet */
+@media screen and (min-width: 768px) {
+	.col-sm-1 {
+		width: 8.33333333%;
+	}
+
+	.col-sm-2 {
+		width: 16.66666667%;
+	}
+
+	.col-sm-3 {
+		width: 25%;
+	}
+
+	.col-sm-4 {
+		width: 33.33333333%;
+	}
+
+	.col-sm-5 {
+		width: 41.66666667%;
+	}
+
+	.col-sm-6 {
+		width: 50%;
+	}
+
+	.col-sm-7 {
+		width: 58.33333333%;
+	}
+
+	.col-sm-8 {
+		width: 66.66666667%;
+	}
+
+	.col-sm-9 {
+		width: 75%;
+	}
+
+	.col-sm-10 {
+		width: 83.33333333%;
+	}
+
+	.col-sm-11 {
+		width: 91.66666667%;
+	}
+
+	.col-sm-12 {
+		width: 100%;
+	}
+}
+
+/* Columnas pc */
+@media screen and (min-width: 992px) {
+	.col-md-1 {
+		width: 8.33333333%;
+	}
+
+	.col-md-2 {
+		width: 16.66666667%;
+	}
+
+	.col-md-3 {
+		width: 25%;
+	}
+
+	.col-md-4 {
+		width: 33.33333333%;
+	}
+
+	.col-md-5 {
+		width: 41.66666667%;
+	}
+
+	.col-md-6 {
+		width: 50%;
+	}
+
+	.col-md-7 {
+		width: 58.33333333%;
+	}
+
+	.col-md-8 {
+		width: 66.66666667%;
+	}
+
+	.col-md-9 {
+		width: 75%;
+	}
+
+	.col-md-10 {
+		width: 83.33333333%;
+	}
+
+	.col-md-11 {
+		width: 91.66666667%;
+	}
+
+	.col-md-12 {
+		width: 100%;
+	}
+}

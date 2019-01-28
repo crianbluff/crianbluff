@@ -1,0 +1,24 @@
+/* Sección ayuda */
+/* Capa con transparencia sección ayuda */
+.section-help:before {
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 100%;
+}
+
+/* Fondo sección ayuda */
+.section-help {
+	backface-visibility: hidden;
+	background: url('../../imgs/imgs-general/modals/modal-apps/apps-1.jpg') #777777 bottom center / cover no-repeat fixed;
+	padding: 40px 0;
+}
+
+/* Título sección ayuda */
+.section-help .title-section-help {
+	font: bold 1.5em 'poiret-one', sans-serif;
+	text-transform: uppercase;
+}
+
+/* Contenido sección ayuda */
+.section-help .content-section-help {
+	margin: 20px 0;
+}

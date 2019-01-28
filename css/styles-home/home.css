@@ -1,0 +1,7 @@
+/* Estilos únicos de la web inicio */
+@import url('services.css');
+@import url('welcome.css');
+@import url('../styles-general/help.css');
+@import url('tally.css');
+@import url('../styles-home/theme-night-home.css');
+@import url('../styles-home/theme-dark-home.css');

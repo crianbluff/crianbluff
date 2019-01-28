@@ -1,0 +1,37 @@
+/* Tema oscuro web soporte */
+/* Soporte web soporte */
+.theme-dark .ctn-support {
+	background-color: #111111;
+}
+
+/* Contenedor caja de información soporte web soporte */
+.theme-dark .ctn-support .ctn-box-support {
+	background-color: #0c0c0c;
+}
+
+/* Icono sección de soporte web soporte */
+.theme-dark .ctn-support .ctn-box-support .icon-support {
+	background-color: #181818;
+}
+
+/* Contenedor de iconos de la navegación por tabs web soporte */
+.theme-dark .navegation-tabs .ctn-tabs-links .ctn-icons-tabs {
+	background-color: #151515;
+}
+
+/* Efecto hover en el contenedor de los iconos navegación por tabs web soporte */
+.theme-dark .navegation-tabs .ctn-tabs-links .ctn-icons-tabs:hover,
+.theme-dark .navegation-tabs .ctn-tabs-links .ctn-icons-tabs:focus,
+.theme-dark .navegation-tabs .ctn-tabs-links .ctn-icons-tabs:active {
+	background-color: #0c0c0c;
+}
+
+/* Contenedor de iconos cuando esta activo navegación por tabs web soporte */
+.theme-dark .navegation-tabs .ctn-tabs-links .ctn-icons-tabs.active {
+	background-color: #0c0c0c;
+}
+
+/* Contenedor de cada contenido navegación por tabs web soporte */
+.theme-dark .navegation-tabs .ctn-tabs-contents-item {
+	background-color: #0c0c0c;
+}

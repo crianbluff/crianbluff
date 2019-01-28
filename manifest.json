@@ -1,0 +1,104 @@
+{
+  "name": "Crianbluff",
+  "short_name": "Crianbluff",
+  "description": "Bienvenid@ a crianbluff.com. Creamos aplicaciones, sitios web atractivos, interactivos modernos. Le ayudamos a construir una fuerte presencia en línea para su negocio, mediante la creación de un sitio web profesional que mejor se adapte a sus necesidades y a su público objetivo. Entregando una solución integral sin que tenga que recurrir a varios proveedores.",
+  "orientation": "portrait",
+  "scope": "./",
+  "lang": "es-CO",
+  "icons": [
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-167.png",
+      "sizes": "167x167",
+      "type": "image/png"
+    },
+
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+
+    {
+      "src": "./imgs/imgs-general/favicons/favicon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+
+  "start_url": "./index.php",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000"
+}

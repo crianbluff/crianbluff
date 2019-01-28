@@ -1,0 +1,29 @@
+/* Tema oscuro web inicio */
+/* Servicios web inicio */
+.theme-dark .section-services {
+	background-color: #111111;
+}
+
+/* Links servicios web inicio */
+.theme-dark .section-services .link-icon-section-services:before {
+	background-color: #181818;
+}
+
+/* Bienvenida web inicio */
+.theme-dark .ctn-welcome {
+	background-color: #151515;
+}
+
+/* Tally web inicio */
+.theme-dark .ctn-tally {
+	background-color: #0c0c0c;
+}
+
+/* Contenedor del los títulos del acordeón e iconos "+" tally web inicio */
+.theme-dark .ctn-tally .acordeon .ctn-acordeon .ctn-title-content-acordeon {
+	background-color: #151515;
+}
+
+.theme-dark .ctn-tally .acordeon .ctn-content-acordeon .content-acordeon {
+	background-color: #0c0c0c;
+}

@@ -1,0 +1,499 @@
+/* Tema oscuro y noche web general */
+/* Inicialize */
+/* Contenedor barra de scroll */
+.theme-dark::-webkit-scrollbar-thumb,
+.theme-night::-webkit-scrollbar-thumb {
+	box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2) inset,
+							0 -1px 0 rgba(255, 255, 255, 0.2) inset;
+}
+
+.theme-dark,
+.theme-night {
+  cursor: url('../../imgs/imgs-general/cursors/default/cursor-default-gray.png'), default;
+}
+
+.theme-dark a,
+.theme-dark input,
+.theme-dark textarea,
+.theme-dark button,
+.theme-night a,
+.theme-night input,
+.theme-night textarea,
+.theme-night button {
+	cursor: url('../../imgs/imgs-general/cursors/pointer/cursor-pointer-two.png'), pointer;
+}
+
+/* Contenedor barra de scroll para los textarea */
+.theme-dark textarea::-webkit-scrollbar-thumb,
+.theme-night textarea::-webkit-scrollbar-thumb {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1) inset,
+							0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+/* Color texto */
+.theme-dark .gray,
+.theme-night .gray {
+	color: #959595;
+}
+
+.theme-dark .gray-clear,
+.theme-night .gray-clear {
+	color: #505050;
+}
+
+.theme-dark .gray-dark,
+.theme-night .gray-dark {
+	color: #a7a7a7;
+}
+
+.theme-dark .pointer,
+.theme-night .pointer {
+	cursor: url('../../imgs/imgs-general/cursors/pointer/cursor-pointer-two.png'), pointer;
+}
+
+/* Lineas hamburguesas */
+.theme-dark .menu-flex .menu .btn-menu .line-hamburguer,
+.theme-night .menu-flex .menu .btn-menu .line-hamburguer {
+	box-shadow: 0 0 1px #ffffff;
+}
+
+/* Links del menu web general */
+.theme-dark .menu-flex .menu .enlaces .links-menu,
+.theme-night .menu-flex .menu .enlaces .links-menu {
+	transition: color 0.3s ease-out;
+}
+
+/* Efectos de hover en las categorías dependiendo de que menú este si el oscuro o el claro web general */
+.theme-dark .menu-flex .menu .enlaces .links-menu:hover:before,
+.theme-dark .menu-flex .menu .enlaces .links-menu:focus:before,
+.theme-dark .menu-flex .menu .enlaces .links-menu:active:before,
+.theme-night .menu-flex .menu .enlaces .links-menu:hover:before,
+.theme-night .menu-flex .menu .enlaces .links-menu:focus:before,
+.theme-night .menu-flex .menu .enlaces .links-menu:active:before {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.theme-dark .menu-flex .menu .enlaces .links-menu:hover,
+.theme-dark .menu-flex .menu .enlaces .links-menu:focus,
+.theme-dark .menu-flex .menu .enlaces .links-menu:active,
+.theme-night .menu-flex .menu .enlaces .links-menu:hover,
+.theme-night .menu-flex .menu .enlaces .links-menu:focus,
+.theme-night .menu-flex .menu .enlaces .links-menu:active {
+	color: #1c1c1c;
+	text-shadow: 1px 1px 1px rgba(28, 28, 28, 0.5);
+}
+
+/* Validación para que sepa sobre que página esta web general */
+.theme-dark .menu-flex .menu .enlaces .links-menu-active,
+.theme-night .menu-flex .menu .enlaces .links-menu-active {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #1c1c1c;
+	text-shadow: 1px 1px 1px rgba(28, 28, 28, 0.5);
+}
+
+.theme-dark .menu-flex .menu .logo-menu .title-logo-menu:hover,
+.theme-dark .menu-flex .menu .logo-menu .title-logo-menu:focus,
+.theme-dark .menu-flex .menu .logo-menu .title-logo-menu:active,
+.theme-night .menu-flex .menu .logo-menu .title-logo-menu:hover,
+.theme-night .menu-flex .menu .logo-menu .title-logo-menu:focus,
+.theme-night .menu-flex .menu .logo-menu .title-logo-menu:active {
+	-webkit-background-clip: text;
+	background-image: linear-gradient(
+			                #ffffff 50%,
+			                #ffffff 100%
+		                );
+	text-shadow: 0 0 15px #ffffff;
+	justify-content: center;
+}
+
+/* Capa slider web general */
+.theme-dark .ctn-slider .slider .section-slider .img-slider:before,
+.theme-night .ctn-slider .slider .section-slider .img-slider:before {
+	background-image: radial-gradient(
+											rgba(40, 40, 40, 0.5) 15%,
+											rgba(0, 0, 0, 0.4) 15%
+										);
+}
+
+/* Flechas del slider web general */
+.theme-dark .ctn-slider .slider-nav .arrows,
+.theme-night .ctn-slider .slider-nav .arrows {
+	color: #cdcdcd;
+}
+
+/* Efecto hover y focus en las flechas del slider web general */
+.theme-dark .ctn-slider .slider-nav .arrows:hover,
+.theme-dark .ctn-slider .slider-nav .arrows:focus,
+.theme-night .ctn-slider .slider-nav .arrows:hover,
+.theme-night .ctn-slider .slider-nav .arrows:focus {
+	color: #ffffff;
+}
+
+/* Título sección ayuda web inicio y web contacto */
+.theme-dark .section-help .title-section-help,
+.theme-night .section-help .title-section-help {
+	color: #cacaca;
+}
+
+/* Encabezados y footers de los modales web general */
+.theme-dark .modal .ctn-modal .modal-content .modal-header,
+.theme-dark .modal .ctn-modal .modal-content .modal-themes-header, 
+.theme-dark .modal .ctn-modal .modal-content .modal-footer,
+.theme-dark .modal .ctn-modal .modal-content .ctn-btns-modal-themes,
+.theme-night .modal .ctn-modal .modal-content .modal-header,
+.theme-night .modal .ctn-modal .modal-content .modal-themes-header, 
+.theme-night .modal .ctn-modal .modal-content .modal-footer,
+.theme-night .modal .ctn-modal .modal-content .ctn-btns-modal-themes {
+	border-color: #505050;
+}
+
+/* Títulos y botones de "x" encabezado de los modales web general */
+.theme-dark .modal .ctn-modal .modal-content .modal-header .title-header-modal,
+.theme-dark .modal .ctn-modal .modal-content .modal-themes-header .title-header-modal-themes,
+.theme-dark .modal .ctn-modal .modal-content .modal-header .btn-close-modal,
+.theme-night .modal .ctn-modal .modal-content .modal-header .title-header-modal,
+.theme-night .modal .ctn-modal .modal-content .modal-themes-header .title-header-modal-themes,
+.theme-night .modal .ctn-modal .modal-content .modal-header .btn-close-modal {
+	color: #b1b1b1;
+}
+
+/* Efecto hover botones cerrar encabezados de los modales web general */
+.theme-dark .modal .ctn-modal .modal-content .modal-header .btn-close-modal:hover,
+.theme-dark .modal .ctn-modal .modal-content .modal-header .btn-close-modal:focus,
+.theme-dark .modal .ctn-modal .modal-content .modal-header .btn-close-modal:active,
+.theme-night .modal .ctn-modal .modal-content .modal-header .btn-close-modal:hover,
+.theme-night .modal .ctn-modal .modal-content .modal-header .btn-close-modal:focus,
+.theme-night .modal .ctn-modal .modal-content .modal-header .btn-close-modal:active {
+	color: #dddddd;
+}
+
+/* Textos, listas con título y sin título en el cuerpo de los modales web general */
+.theme-dark .modal .ctn-modal .modal-content .modal-body .content-modal,
+.theme-dark .modal .ctn-modal .modal-content .modal-body .ctn-list-modal .list-modal,
+.theme-dark .modal .ctn-modal .modal-content .modal-body .ctn-list-modal .list-modal-whithout-title,
+.theme-night .modal .ctn-modal .modal-content .modal-body .content-modal,
+.theme-night .modal .ctn-modal .modal-content .modal-body .ctn-list-modal .list-modal,
+.theme-night .modal .ctn-modal .modal-content .modal-body .ctn-list-modal .list-modal-whithout-title {
+	color: #a9a9a9;
+}
+
+/* Modal temas web general */
+/* Botones modal temas web general */
+.theme-dark .modal .ctn-modal .modal-content .ctn-btns-modal-themes .btns-modal-themes:nth-child(1),
+.theme-night .modal .ctn-modal .modal-content .ctn-btns-modal-themes .btns-modal-themes:nth-child(1) {
+	color: #aaaaaa;
+}
+
+.theme-dark .modal .ctn-modal .modal-content .ctn-btns-modal-themes .btns-modal-themes:nth-child(2),
+.theme-night .modal .ctn-modal .modal-content .ctn-btns-modal-themes .btns-modal-themes:nth-child(2) {
+	background-color: #959595;
+	color: #252525;
+}
+
+/* Footer pc web general */
+.theme-dark .footer-pc,
+.theme-night .footer-pc {
+	box-shadow: -1px 0 1px #000000;
+}
+
+/* Footer mobile web general */
+.theme-dark .footer-mobil,
+.theme-night .footer-mobil {
+	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Botón footer-mobile "+" web general */
+.theme-dark .footer-mobil .footer-mobile-btn-plus-no-expand,
+.theme-night .footer-mobil .footer-mobile-btn-plus-no-expand {
+	color: #ffffff;
+	text-shadow: 0 0 5px #000000;
+}
+
+/* Buttons */
+/* Botón sección ayuda, botón formulario de contacto y botón de cerrar en el footer de los modales */
+.theme-dark .btn-shadow,
+.theme-night .btn-shadow {
+	border-radius: 2px;
+}
+
+/* Efecto cuando dan click en el botón sección ayuda, botón formulario de contacto y botón de cerrar en el footer de los modales */
+.theme-dark .btn-shadow:active,
+.theme-night .btn-shadow:active {
+	box-shadow: 1px 0px #000000,
+	 						0px 1px #000000,
+	 						2px 1px #000000,
+	 						1px 2px #000000,
+	 						3px 2px #000000,
+	 						2px 3px #000000,
+	 						4px 3px #000000,
+	 						3px 4px #000000;
+}
+
+/* Botón de ir arriba web general */
+.theme-dark .btn-go-to-up,
+.theme-night .btn-go-to-up {
+	box-shadow: 0 0 0 1px inset;
+}
+
+/* Tema oscuro y noche web inicio */
+/* Servicios web inicio */
+.theme-dark .section-services,
+.theme-night .section-services {
+	box-shadow: 1px 0 1px #000000;
+}
+
+/* Efecto cuando hacen hover en los iconos de la seccion servicios web inicio */
+.theme-dark .section-services .link-icon-section-services:hover,
+.theme-dark .section-services .link-icon-section-services:focus,
+.theme-dark .section-services .link-icon-section-services:active,
+.theme-night .section-services .link-icon-section-services:hover,
+.theme-night .section-services .link-icon-section-services:focus,
+.theme-night .section-services .link-icon-section-services:active {
+	color: #cdcdcd;
+}
+
+/* Títulos de información de los servicios web inicio */
+.theme-dark .section-services .section-services-info .title-section-services,
+.theme-night .section-services .section-services-info .title-section-services {
+	color: #b1b1b1;
+}
+
+/* Efecto hover en tíulos de información de los servicios web inicio */
+.theme-dark .section-services .section-services-info .title-section-services:hover,
+.theme-night .section-services .section-services-info .title-section-services:hover {
+	color: #dddddd;
+}
+
+/* Efecto hover flecha de ir a la siguiente sección web inicio */
+.theme-dark .move-services .arrow-down-services:hover,
+.theme-dark .move-services .arrow-down-services:focus,
+.theme-dark .move-services .arrow-down-services:active,
+.theme-night .move-services .arrow-down-services:hover,
+.theme-night .move-services .arrow-down-services:focus,
+.theme-night .move-services .arrow-down-services:active {
+	color: #cacaca;
+}
+
+/* Contenedor del los títulos del acordeón e iconos "+" tally web inicio */
+.theme-dark .ctn-tally .acordeon .ctn-acordeon .ctn-title-content-acordeon,
+.theme-night .ctn-tally .acordeon .ctn-acordeon .ctn-title-content-acordeon {
+	box-shadow: 0 0 0 1px #505050;
+}
+
+/* Contenido del acordeón tally web inicio */
+.theme-dark .ctn-tally .acordeon .ctn-acordeon .ctn-content-acordeon,
+.theme-night .ctn-tally .acordeon .ctn-acordeon .ctn-content-acordeon {
+	box-shadow: 0 1px 0 1px #505050;
+}
+
+.theme-dark .ctn-tally .acordeon .ctn-content-acordeon .content-acordeon,
+.theme-night .ctn-tally .acordeon .ctn-content-acordeon .content-acordeon {
+	color: #a7a7a7;
+}
+
+/* Tema oscuro y noche web quiénes somos */
+/* Títulos de quiénes somos, lenguajes, frameworks, cms y otras herramientas web quiénes somos */
+.theme-dark .ctn-about-us .about-us .title-about-us,
+.theme-dark .ctn-languages .languages .title-languages,
+.theme-dark .ctn-frameworks .frameworks .title-frameworks,
+.theme-dark .ctn-cms .cms .title-cms,
+.theme-dark .ctn-tools-developer .tools-developer .title-tools-developer,
+.theme-night .ctn-about-us .about-us .title-about-us,
+.theme-night .ctn-languages .languages .title-languages,
+.theme-night .ctn-frameworks .frameworks .title-frameworks,
+.theme-night .ctn-cms .cms .title-cms,
+.theme-night .ctn-tools-developer .tools-developer .title-tools-developer {
+	color: #cdcdcd;
+}
+
+/* Subtítulos quiénes somos, lenguajes, frameworks, cms y otras herramientas web quiénes somos */
+.theme-dark .ctn-about-us .about-us .subtitle-about-us,
+.theme-dark .ctn-languages .languages .subtitle-languages,
+.theme-dark .ctn-frameworks .frameworks .subtitle-frameworks,
+.theme-dark .ctn-cms .cms .subtitle-cms,
+.theme-dark .ctn-tools-developer .tools-developer .subtitle-tools-developer,
+.theme-night .ctn-about-us .about-us .subtitle-about-us,
+.theme-night .ctn-languages .languages .subtitle-languages,
+.theme-night .ctn-frameworks .frameworks .subtitle-frameworks,
+.theme-night .ctn-cms .cms .subtitle-cms,
+.theme-night .ctn-tools-developer .tools-developer .subtitle-tools-developer {
+	color: #777777;
+}
+
+/* Contenido web quiénes somos */
+.theme-dark .ctn-about-us .about-us .content-about-us,
+.theme-night .ctn-about-us .about-us .content-about-us {
+	color: #b1b1b1;
+}
+
+/* Imágenes lenguajes, frameworks, cms y otras herramientas web quiénes somos */
+.theme-dark .img-development,
+.theme-night .img-development {
+	box-shadow: 0 0 10px #000000;
+}
+
+/* Tema oscuro y noche web soporte */
+/* Contenedor caja de información soporte web soporte */
+.theme-dark .ctn-support .ctn-box-support,
+.theme-night .ctn-support .ctn-box-support {
+	box-shadow: 0 0 1px 1px #777777 inset;
+}
+
+/* Icono sección de soporte web soporte */
+.theme-dark .ctn-support .ctn-box-support .icon-support,
+.theme-night .ctn-support .ctn-box-support .icon-support {
+	box-shadow: 1px 2px 0 0 #a7a7a7 inset;
+	color: #dddddd;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+/* Título contenido web soporte */
+.theme-dark .ctn-support .ctn-box-support .ctn-content-support .title-content-support,
+.theme-night .ctn-support .ctn-box-support .ctn-content-support .title-content-support {
+	color: #b1b1b1;
+}
+
+/* Contenido web soporte */
+.theme-dark .ctn-support .ctn-box-support .ctn-content-support .content-support,
+.theme-night .ctn-support .ctn-box-support .ctn-content-support .content-support {
+	color: #959595;
+}
+
+/* Contenedor de iconos de la navegación por tabs web soporte */
+.theme-dark .navegation-tabs .ctn-tabs-links .ctn-icons-tabs,
+.theme-night .navegation-tabs .ctn-tabs-links .ctn-icons-tabs {
+	border-color: #505050;
+	border-bottom-color: rgba(0, 0, 0, 0);
+	color: #b1b1b1;
+}
+
+/* Contenedor de cada contenido navegación por tabs web soporte */
+.theme-dark .navegation-tabs .ctn-tabs-contents-item,
+.theme-night .navegation-tabs .ctn-tabs-contents-item {
+	border-color: #505050;
+}
+
+/* Título de cada contenido y contenido navegación por tabs web soporte */
+.theme-dark .navegation-tabs .ctn-tabs-contents-item .title-content-navegation-tabs,
+.theme-dark .navegation-tabs .ctn-tabs-contents-item .content-navegation-tabs,
+.theme-night .navegation-tabs .ctn-tabs-contents-item .title-content-navegation-tabs,
+.theme-night .navegation-tabs .ctn-tabs-contents-item .content-navegation-tabs {
+	color: #b1b1b1;
+}
+
+/* Tema noche y oscuro web contacto */
+/* Tema oscuro web contacto */
+/* Mensaje formulario correcto */
+.theme-dark .form-correct,
+.theme-night .form-correct {
+	background-color: #0b2b02;
+}
+
+/* Título mensaje del formulario correcto web contacto */
+.theme-dark .form-correct .ctn-title-btn-close-form-correct .title-form-correct,
+.theme-night .form-correct .ctn-title-btn-close-form-correct .title-form-correct {
+	color: #6cc166;
+}
+
+/* Botón de cerrar mensaje de formulario correcto web contacto */
+.theme-dark .form-correct .ctn-title-btn-close-form-correct .btn-close-form-correct,
+.theme-night .form-correct .ctn-title-btn-close-form-correct .btn-close-form-correct {
+  color: #59901e;
+}
+
+/* Efecto hover bptón de cerrar mensaje de formulario correcto web contacto  */
+.theme-dark .form-correct .ctn-title-btn-close-form-correct .btn-close-form-correct:hover,
+.theme-dark .form-correct .ctn-title-btn-close-form-correct .btn-close-form-correct:focus,
+.theme-dark .form-correct .ctn-title-btn-close-form-correct .btn-close-form-correct:active,
+.theme-night .form-correct .ctn-title-btn-close-form-correct .btn-close-form-correct:hover,
+.theme-night .form-correct .ctn-title-btn-close-form-correct .btn-close-form-correct:focus,
+.theme-night .form-correct .ctn-title-btn-close-form-correct .btn-close-form-correct:active {
+	color: #39b139;
+}
+
+/* Contenido mensaje formulario correcto web contacto */
+.theme-dark .form-correct .content-form-correct,
+.theme-night .form-correct .content-form-correct {
+	color: #7fbd7f;
+}
+
+/* Estilo del autocompletar en los inputs formulario de contacto web contacto */
+.theme-dark .ctn-form-contact .form-contact .ctn-inputs .effect-input:-webkit-autofill,
+.theme-dark .ctn-form-contact .form-contact .ctn-inputs .effect-input:-webkit-autofill:hover,
+.theme-dark .ctn-form-contact .form-contact .ctn-inputs .effect-input:-webkit-autofill:focus,
+.theme-dark .ctn-form-contact .form-contact .ctn-inputs .effect-input:-webkit-autofill:active,
+.theme-night .ctn-form-contact .form-contact .ctn-inputs .effect-input:-webkit-autofill,
+.theme-night .ctn-form-contact .form-contact .ctn-inputs .effect-input:-webkit-autofill:hover,
+.theme-night .ctn-form-contact .form-contact .ctn-inputs .effect-input:-webkit-autofill:focus,
+.theme-night .ctn-form-contact .form-contact .ctn-inputs .effect-input:-webkit-autofill:active {
+	box-shadow: 0 0 0 1000px #252525 inset;
+	color: #dddddd;
+}
+
+/* Labels formulario de contacto web contacto */
+.theme-dark .ctn-form-contact .form-contact .ctn-inputs .support-text-form-contact,
+.theme-night .ctn-form-contact .form-contact .ctn-inputs .support-text-form-contact {
+	color: #a7a7a7;
+}
+
+/* Efecto labels cuando el input esta en estado focus o valido Formulario de contacto web contact */
+.theme-dark .ctn-form-contact .form-contact .ctn-inputs .support-text-form-contact.active-input-form-contact,
+.theme-night .ctn-form-contact .form-contact .ctn-inputs .support-text-form-contact.active-input-form-contact {
+	color: #dddddd;
+}
+
+/* Inputs formulario contacto web contacto */
+.theme-dark .ctn-form-contact .form-contact .ctn-inputs .effect-input,
+.theme-night .ctn-form-contact .form-contact .ctn-inputs .effect-input {
+	border-bottom-color: #505050;
+	color: #dddddd;
+}
+
+/* Estilos de los inputs del formulario de contacto cuando esten validos web contacto */
+.theme-dark .ctn-form-contact .form-contact .ctn-inputs .validate-input,
+.theme-night .ctn-form-contact .form-contact .ctn-inputs .validate-input {
+	border-bottom-color: #505050;
+}
+
+/* Barra de los inputs para el efecto formulario de contacto web contacto */
+.theme-dark .ctn-form-contact .form-contact .ctn-inputs .bar-input-effect:before,
+.theme-night .ctn-form-contact .form-contact .ctn-inputs .bar-input-effect:before {
+	background-color: #dddddd;
+}
+
+/* Efecto hover al icono de limpiar input formulario de contacto */
+.theme-dark .ctn-form-contact .form-contact .ctn-inputs .bar-input-effect .clear-input-icon:hover,
+.theme-dark .ctn-form-contact .form-contact .ctn-inputs .bar-input-effect .clear-input-icon:focus,
+.theme-dark .ctn-form-contact .form-contact .ctn-inputs .bar-input-effect .clear-input-icon:active,
+.theme-night .ctn-form-contact .form-contact .ctn-inputs .bar-input-effect .clear-input-icon:hover,
+.theme-night .ctn-form-contact .form-contact .ctn-inputs .bar-input-effect .clear-input-icon:focus,
+.theme-night .ctn-form-contact .form-contact .ctn-inputs .bar-input-effect .clear-input-icon:active {
+	color: #cdcdcd;
+}
+
+/* Icono contáctanos web contacto */
+.theme-dark .ctn-contact-us .ctn-box-contact-us .icon-contact-us,
+.theme-night .ctn-contact-us .ctn-box-contact-us .icon-contact-us {
+	box-shadow: 0 0 0 2px #a9a9a9;
+	color: #a9a9a9;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+/* Efecto hover icono contáctanos */
+.theme-dark .ctn-contact-us .ctn-box-contact-us .icon-contact-us:hover,
+.theme-dark .ctn-contact-us .ctn-box-contact-us .icon-contact-us:focus,
+.theme-dark .ctn-contact-us .ctn-box-contact-us .icon-contact-us:active,
+.theme-night .ctn-contact-us .ctn-box-contact-us .icon-contact-us:hover,
+.theme-night .ctn-contact-us .ctn-box-contact-us .icon-contact-us:focus,
+.theme-night .ctn-contact-us .ctn-box-contact-us .icon-contact-us:active {
+	box-shadow: 3px 3px 0 1px #a9a9a9;
+}
+
+/* Título y contenido contáctanos web contacto */
+.theme-dark .ctn-contact-us .ctn-box-contact-us .title-contact-us,
+.theme-dark .ctn-contact-us .ctn-box-contact-us .content-contact-us,
+.theme-night .ctn-contact-us .ctn-box-contact-us .title-contact-us,
+.theme-night .ctn-contact-us .ctn-box-contact-us .content-contact-us {
+	color: #a9a9a9;
+}

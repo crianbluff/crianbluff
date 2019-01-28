@@ -1,0 +1,192 @@
+/* Footer mobil */
+.footer-mobil {
+	background-color: #ffffff;
+	bottom: 0;
+  box-shadow: 0 -1px 10px rgba(70, 70, 70, 0.7);
+	left: 0;
+	opacity: 0;
+	padding: 5px 0;
+	transform-origin: bottom;
+	transform: perspective(500px) rotateX(90deg);
+	transition: opacity 0.3s ease,
+	            transform 0.5s ease;
+	z-index: 500;
+}
+
+/* Mediante jquery se agregara esta clase o se remueve al footer dependiendo de la posición del scroll */
+/* Cuando pasa de sierta posición del scroll y hace el efecto como si se levantara o se recostara en caso de que se oculte */
+.active-footer-mobil {
+	opacity: 1;
+	transform: perspective(500px) rotateX(0deg);
+}
+
+.footer-mobil .social-media {
+	justify-content: space-around;
+	justify-content: space-evenly; /* Tiene 2 justify-content es para la compatibilidad en internet explorer por lo que tiene space-around */
+}
+
+/* Triangulo inferior del contenedor de la burbuja paleta de colores footer-mobile */
+.footer-mobil .social-media .ctn-paletts-colors-footer-mobil:before {
+	border-bottom: 0;
+	border-left: 5px solid rgba(0, 0, 0, 0);
+	border-right: 5px solid rgba(0, 0, 0, 0);
+	border-top: 10px solid rgba(55, 55, 55, 0.7);
+	content: '';
+	left: 5%;
+	position: fixed;
+	top: 100%;
+}
+
+/* Contenedor burbuja paleta de colores footer-mobile */
+.footer-mobil .social-media .ctn-paletts-colors-footer-mobil {
+	background-color: rgba(55, 55, 55, 0.7);
+	border-radius: 5px;
+	bottom: 4.5em;
+	height: 30px;
+	justify-content: space-around;
+	justify-content: space-evenly; /* Tiene 2 justify-content es para la compatibilidad en internet explorer por lo que tiene space-around */
+	left: 10px;
+ 	opacity: 0;
+	width: 25%;
+}
+
+/* Paleta de colores footer mobil */
+.footer-mobil .social-media .ctn-paletts-colors-footer-mobil .paletts-colors-footer-mobil {
+	box-shadow: 0 2px 5px #000000;
+	height: 1em;
+	width: 1em;
+}
+
+.footer-mobil .social-media .link-social-media:before,
+.footer-mobil .social-media .btn-go-to-up-footer:before {
+	height: 100%;
+	left: 0;
+	top: 100%;
+	transition: background-color 0.5s ease-out,
+	            top 0.5s ease-out;
+	width: 100%;
+	z-index: 1;
+}
+
+.footer-mobil .social-media .link-social-media,
+.footer-mobil .social-media .btn-go-to-up-footer {
+	border: 3px solid rgba(0, 0, 0, 0);
+	box-sizing: content-box;
+	font-size: 1.5em;
+	height: 2.1em;
+	line-height: 2.2em;
+	overflow: hidden;
+	width: 2.1em;
+	z-index: 2;
+}
+
+.footer-mobil .social-media .link-social-media .icons-footer-mobil,
+.footer-mobil .social-media .btn-go-to-up-footer .icon-go-to-up-footer {
+	position: relative;
+	transition: color 0.5s ease-out,
+	            transform 0.5s ease-out;
+	z-index: 3;
+}
+
+/* Efecto hover en footer-mobil */
+.footer-mobil .social-media .link-social-media:hover:before,
+.footer-mobil .social-media .link-social-media:focus:before,
+.footer-mobil .social-media .link-social-media:active:before,
+.footer-mobil .social-media .btn-go-to-up-footer:hover:before,
+.footer-mobil .social-media .btn-go-to-up-footer:focus:before,
+.footer-mobil .social-media .btn-go-to-up-footer:active:before {
+	background-color: #ffffff;
+	top: 0;
+}
+
+/* Hover iconos footer mobile y botón de ir arriba */
+.footer-mobil .social-media .link-social-media:hover > .icons-footer-mobil,
+.footer-mobil .social-media .link-social-media:focus > .icons-footer-mobil,
+.footer-mobil .social-media .link-social-media:active > .icons-footer-mobil,
+.footer-mobil .social-media .btn-go-to-up-footer:hover > .icon-go-to-up-footer,
+.footer-mobil .social-media .btn-go-to-up-footer:focus > .icon-go-to-up-footer {
+	transform: rotateY(360deg);
+}
+
+/* Hover color para cada una de las redes sociales */
+.footer-mobil .social-media .bgcolor-facebook:hover > .icons-footer-mobil,
+.footer-mobil .social-media .bgcolor-facebook:focus > .icons-footer-mobil,
+.footer-mobil .social-media .bgcolor-facebook:active > .icons-footer-mobil {
+	color: #3b5998;
+}
+
+.footer-mobil .social-media .bgcolor-twitter:hover > .icons-footer-mobil,
+.footer-mobil .social-media .bgcolor-twitter:focus > .icons-footer-mobil,
+.footer-mobil .social-media .bgcolor-twitter:active > .icons-footer-mobil {
+	color: #55acee;
+}
+
+.footer-mobil .social-media .bgcolor-whatsapp:hover > .icons-footer-mobil,
+.footer-mobil .social-media .bgcolor-whatsapp:focus > .icons-footer-mobil,
+.footer-mobil .social-media .bgcolor-whatsapp:active > .icons-footer-mobil {
+	color: #25d366;
+}
+
+.footer-mobil .social-media .bgcolor-google-plus:hover > .icons-footer-mobil,
+.footer-mobil .social-media .bgcolor-google-plus:focus > .icons-footer-mobil,
+.footer-mobil .social-media .bgcolor-google-plus:active > .icons-footer-mobil {
+	color: #dd4b39;
+}
+
+.footer-mobil .social-media .bgcolor-github:hover > .icons-footer-mobil,
+.footer-mobil .social-media .bgcolor-github:focus > .icons-footer-mobil,
+.footer-mobil .social-media .bgcolor-github:active > .icons-footer-mobil {
+	color: #000000;
+}
+
+.footer-mobil .social-media .btn-go-to-up-footer:hover > .icon-go-to-up-footer,
+.footer-mobil .social-media .btn-go-to-up-footer:focus > .icon-go-to-up-footer,
+.footer-mobil .social-media .btn-go-to-up-footer:active > .icon-go-to-up-footer {
+	color: #000000;
+}
+
+/* Efectos para el botón "+" de deslizar las redes */
+/* Efecto en el botón plus para cuando muestra el footer-mobile */
+.footer-mobil .footer-mobile-btn-plus-no-expand {
+	bottom: 60px;
+  box-shadow: 0 1px 10px rgba(70, 70, 70, 0.7);
+	height: 1.5em;
+	line-height: 1.5em;
+	right: 0.5em;
+	transition: bottom 0.6s ease,
+	            height 0.6s ease,
+							line-height 0.6s ease,
+							right 0.6s ease,
+							transform 0.6s ease,
+	            width 0.6s ease;
+	width: 1.5em;
+	z-index: 500;
+}
+
+/* Efecto del botón para cuando oculte el footer-mobile */
+.footer-mobil .footer-mobile-btn-plus-expand {
+	bottom: 0.5em;
+	height: 3em;
+	line-height: 3em;
+	right: 0.5em;
+	transition-delay: 0.2s;
+	transform: translateY(-100px); /* En caso de que no se dejen se deja en el html por fuera de la sección */
+	-ms-transform: translateY(0); /* Para explorer ya que ahí no funciona bien */
+	width: 3em;
+}
+
+/* Efecto para rotar el icono de plus */
+.footer-mobil .icon-close-footer-mobile {
+	transform: rotateZ(225deg);
+	transition: transform 0.2s ease;
+}
+
+.footer-mobil .rotate-icon-plus {
+  transform: rotateZ(-90deg);
+}
+
+/* Efecto para esconder el footer-mobile */
+.hide-footer-mobile {
+	transform: translateY(100px); /* En caso de que no se dejen se deja en el html por fuera de la sección */
+	transition: transform 1s ease-out;
+}

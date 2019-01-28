@@ -1,0 +1,321 @@
+/* Modales */
+/* overflow-y: auto; para que cuando el modal este abierto si es muy largo se pueda scrollear y el transition es para cuando se muestra o se oculta las 2 funcionan */
+.modal {
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	transform: scale(0) translate3d(0, -1000px, 0);
+	transition: opacity 1s ease,
+	            transform 1s ease;            
+	z-index: 800;
+}
+
+/* Estilo del scroll para los modales */
+.show-modal::-webkit-scrollbar {
+	width: 5px;
+}
+
+.show-modal::-webkit-scrollbar-thumb {
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1) inset,
+							0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+/* Efecto de los modales cuando se muestran */
+.show-modal {
+	opacity: 1;
+	transform: scale(1) translate3d(0, 0, 0);
+}
+
+.modal .ctn-modal {
+	margin: 30px auto;
+	width: 750px;
+}
+
+.modal .ctn-modal .modal-content {
+	border-radius: 5px;
+	overflow-x: hidden;
+}
+
+/* Encabezados de los modales */
+.modal .ctn-modal .modal-content .modal-header {
+	box-shadow: 0 0 0 1px #dcdcdc;
+	justify-content: space-between;
+	padding: 1em;
+}
+
+/* Títulos encabezados de los modales */
+.modal .ctn-modal .modal-content .modal-header .title-header-modal {
+	font: normal 2em 'dancing-script', sans-serif;
+}
+
+/* Botones cerrar encabezados de los modales */
+.modal .ctn-modal .modal-content .modal-header .btn-close-modal {
+	color: #909090;
+	font-size: 20px;
+	height: 20px;
+	transition: color 0.2s ease;
+	width: 20px;
+}
+
+/* Efecto hover botones cerrar encabezados de los modales */
+.modal .ctn-modal .modal-content .modal-header .btn-close-modal:hover,
+.modal .ctn-modal .modal-content .modal-header .btn-close-modal:focus,
+.modal .ctn-modal .modal-content .modal-header .btn-close-modal:active {
+	color: #454545;
+}
+
+/* Cuerpo de los modales */
+.modal .ctn-modal .modal-content .modal-body {
+	padding: 1em;
+}
+
+/* Imágenes en el cuerpo de los modales */
+.modal .ctn-modal .modal-content .modal-body .img-modal {
+	margin: 5px;
+	max-width: calc(50% - 1em);
+}
+
+/* Textos en el cuerpo de los modales */
+.modal .ctn-modal .modal-content .modal-body .content-modal {
+	padding: 5px 0;
+}
+
+/* Textos resaltados en el cuerpo de los modales */
+.modal .ctn-modal .modal-content .modal-body .highlight {
+	font-family: 'montserrat';
+}
+
+.modal .ctn-modal .modal-content .modal-body .ctn-list-modal {
+	margin-top: 10px;
+}
+
+.modal .ctn-modal .modal-content .modal-body .ctn-list-modal .list-modal {
+  margin: 0 0 10px 10px;
+}
+
+.modal .ctn-modal .modal-content .modal-body .ctn-list-modal .list-modal-whithout-title {
+  margin-bottom: 10px;
+}
+
+/* Footers de los modales */
+.modal .ctn-modal .modal-content .modal-footer {
+	box-shadow: 0 0 0 1px #dcdcdc;
+	padding: 1em;
+	text-align: right;
+}
+
+/* Tarjeta de presentación */
+.modal .card-presentation {
+	height: 500px;
+	left: 50%;
+	max-width: 500px;
+	perspective: 1000px;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Parte Frontal y trasera de la tarjeta */
+.modal .card-presentation .front-card-presentation,
+.modal .card-presentation .back-card-presentation {
+	backface-visibility: hidden;
+	border-radius: 10px;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.5s ease-in-out;
+}
+
+/* Tarjeta parte delantera de la tarjeta */
+.modal .card-presentation .front-card-presentation {
+  box-shadow: 0 0 20px #ffffff inset,
+              0 0 3px #ffffff;
+	overflow: hidden;
+	transform: rotateY(0deg);
+}
+
+/* Botón de cerrar tarjeta tanto para la parte trasera como la parte delantera */
+.modal .card-presentation .front-card-presentation .close-card-presentation,
+.modal .card-presentation .back-card-presentation .close-card-presentation {
+	font-size: 20px;
+	right: 10px;
+	top: 5px;
+	transition: color 0.1s ease;
+	z-index: 1;
+}
+
+/* Hover en la x de cerra modal tanto para la parte trasera como la parte delantera */
+.modal .card-presentation .front-card-presentation .close-card-presentation:hover,
+.modal .card-presentation .front-card-presentation .close-card-presentation:focus,
+.modal .card-presentation .front-card-presentation .close-card-presentation:active,
+.modal .card-presentation .back-card-presentation .close-card-presentation:hover,
+.modal .card-presentation .back-card-presentation .close-card-presentation:focus,
+.modal .card-presentation .back-card-presentation .close-card-presentation:active {
+	color: #cdcdcd;
+}
+
+/* Fondo parte delantera de la tarjeta */
+.modal .card-presentation .front-card-presentation .wallpaper-card-presentation {
+	background: url('../../imgs/imgs-general/modals/modal-creator-web/background-creator-web/background-creator-web.jpg') rgba(0, 0, 0, 0) center center / cover no-repeat scroll;
+	height: 50%;
+}
+
+/* Fondo con gradiente de la bandera de Colombia con opacidad */
+.modal .card-presentation .front-card-presentation .avatar-card-presentation:before {
+	background-image: linear-gradient(
+	  	                180deg,
+	  	                rgba(255, 255, 0, 0.3) 50%,
+	  	                rgba(0, 0, 255, 0.3) 70%,
+	  	                rgba(255, 0, 0, 0.3) 80%
+  	                );
+	border-radius: 50%;
+	content: '';
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/* Avatar del creador parte delantera de la tarjeta */
+.modal .card-presentation .front-card-presentation .avatar-card-presentation {
+	background: url('../../imgs/imgs-general/modals/modal-creator-web/avatar-creator-web/avatar-creator-web.jpg') #404040 center center / contain repeat scroll;
+	bottom: 40%;
+	box-shadow: 0 0 0 3px #ffffff;
+	height: 120px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 120px;
+	z-index: 1;
+}
+
+/* Bandera de colombia parte delantera de la tarjeta */
+.modal .card-presentation .front-content-card-presentation .flag-colombia-card-presentation {
+  background-image: linear-gradient(
+	  	                180deg,
+	  	                #ffff00 35%,
+	  	                #0000ff 60%,
+	  	                #ff0000 90%
+  	                );
+  height: 10px;
+  margin: 10px auto;
+  width: 20px;
+}
+
+/* Contenedor contenido parte delantera de la tarjeta */
+.modal .card-presentation .front-card-presentation .ctn-front-content-card-presentation {
+	background-color: rgba(0, 0, 0, 0.7);
+	height: 50%;
+	padding: 70px 0;
+}
+
+/* Contenido parte delantera de la tarjeta */
+.modal .card-presentation .front-card-presentation .ctn-front-content-card-presentation .front-content-card-presentation {
+	font: bold 1em 'montserrat', sans-serif;
+	height: 100%;
+	letter-spacing: 1px;
+	line-height: 2;
+}
+
+/* Redes sociales del creador parte delantera y trasera de la tarjeta */
+.modal .card-presentation .front-card-presentation .social-media-card-presentation,
+.modal .card-presentation .back-card-presentation .social-media-card-presentation {
+	bottom: 0;
+	height: 50px;
+	left: 0;
+	line-height: 50px;
+}
+
+/* Links de las redes sociales del creador parte delantera y trasera de la tarjeta */
+.modal .card-presentation .front-card-presentation .social-media-card-presentation .links-section-media-card-presentation,
+.modal .card-presentation .back-card-presentation .social-media-card-presentation .links-section-media-card-presentation {
+	border-radius: 5px;
+	color: #a0a0a0;
+	line-height: 10px;
+	margin: 0.25em;
+	padding: 5px;
+	transition: background-color 0.3s ease-in-out,
+	            color 0.3s ease-in-out;
+}
+
+/* Hover en los links de las redes sociales del creador parte delantera y trasera de la tarjeta */
+.modal .card-presentation .front-card-presentation .social-media-card-presentation .links-section-media-card-presentation:hover,
+.modal .card-presentation .front-card-presentation .social-media-card-presentation .links-section-media-card-presentation:focus,
+.modal .card-presentation .front-card-presentation .social-media-card-presentation .links-section-media-card-presentation:active,
+.modal .card-presentation .back-card-presentation .social-media-card-presentation .links-section-media-card-presentation:hover,
+.modal .card-presentation .back-card-presentation .social-media-card-presentation .links-section-media-card-presentation:focus,
+.modal .card-presentation .back-card-presentation .social-media-card-presentation .links-section-media-card-presentation:active {
+	background-color: rgba(255, 255, 255, 0.3);
+	color: #000000;
+}
+
+/* Tarjeta parte trasera */
+.modal .card-presentation .back-card-presentation {
+	background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 5px #cdcdcd inset;
+	flex-direction: column;
+	justify-content: center;
+	padding: 50px;
+	transform: rotateY(180deg);
+}
+
+/* Contenido parte trasera de la tarjeta */
+.modal .card-presentation .back-card-presentation .back-content-card-presentation {
+	font: normal 1em 'montserrat', sans-serif;
+}
+
+/* Título contenido parte trasera de la tarjeta */
+.modal .card-presentation .back-card-presentation .back-content-card-presentation .title-back-content-card-presentation {
+	font-size: 1.5em;
+	left: 0;
+	letter-spacing: 1px;
+	text-shadow: 0 0 20px #ffffff;
+	top: 5%;
+}
+
+/* Habilidades Creador parte trasera de la tarjeta */
+.modal .card-presentation .back-card-presentation .back-content-card-presentation .skills-creator-card-presentation {
+	text-shadow: 0 0 1px #000000;
+}
+
+/* El último contenido osea el parrafo parte trasera de la tarjeta */
+.modal .card-presentation .back-card-presentation .back-content-card-presentation .skills-creator-card-presentation:last-child {
+	padding: 10px;
+	text-align: justify;
+}
+
+/* Efecto para cuando se gire la tarjeta a la parte delantera */
+.show-modal.flip .front-card-presentation {
+	transform: rotateY(180deg);
+}
+
+/* Efecto para cuando se gire la tarjeta a la parte trasera */
+.show-modal.flip .back-card-presentation {
+	transform: rotateY(360deg);
+}
+
+/* Modal temas */
+#modal-themes .ctn-modal {
+ 	font-family: 'montserrat', sans-serif;
+	width: 25em;
+}
+
+#modal-themes .ctn-modal .modal-content .modal-themes-header {
+	border-bottom: 1px solid #dcdcdc;
+	padding: 1em;
+}
+
+#modal-themes .ctn-modal .modal-content .modal-themes-header .title-header-modal-themes {
+	font: normal 2em 'dancing-script', sans-serif;
+}
+
+#modal-themes .ctn-modal .modal-content .ctn-btns-modal-themes {
+	border-top: 1px solid #dcdcdc;
+}
+
+#modal-themes .ctn-modal .modal-content .ctn-btns-modal-themes .btns-modal-themes {
+	font: bold 15px 'montserrat', sans-serif;
+	height: 50px;
+	line-height: 50px;
+	width: 50%;
+}

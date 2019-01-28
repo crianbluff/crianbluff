@@ -1,0 +1,243 @@
+/* Footer pc */
+.footer-pc {
+	background-color: #252525;
+	padding: 3em 0 15px 0;
+}
+
+.footer-pc .col-footer-pc {
+	margin-bottom: 50px;
+}
+
+/* Titulos del footer */
+.footer-pc .col-footer-pc .title-section-footer-pc {
+	color: #dddddd;
+	font: bold 1em 'montserrat', sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	text-shadow: 0 0 10px #909090;
+}
+
+/* Animación para la sección de servicios en el footer validad por jquery */
+.footer-pc .col-footer-pc .highlight-services-footer-pc {
+	animation: bouncein 1.5s 3 forwards;
+	display: inline-block;
+}
+
+/* Iconos footer */
+.footer-pc .col-footer-pc .icons-section-footer-pc {
+	margin-right: 5px;
+}
+
+/* Links y contenido footer */
+.footer-pc .col-footer-pc .links-section-footer-pc,
+.footer-pc .col-footer-pc .content-section-footer-pc {
+	font-size: 14px;
+}
+
+/* Color de la letra solo para los que son contenido y no links */
+.footer-pc .col-footer-pc .content-section-footer-pc {
+	color: #a0a0a0;
+}
+
+/* Color de los iconos del footer */
+.icon-creator,
+.icon-codepen,
+.icon-about-us {
+	color: #cdcdcd;
+}
+
+.icon-email,
+.icon-domain {
+	color: #eeae4a;
+}
+
+.icon-cellphone {
+	color: #00b6f7;
+}
+
+.icon-flag-colombia {
+  background-image: linear-gradient(
+  	                  180deg,
+  	                  #ffff00 35%,
+  	                  #0000ff 50%,
+  	                  #ff0000 75%
+  	                );
+  -webkit-background-clip: text;
+}
+
+.icon-app-web {
+	color: #4caf50;
+}
+
+.icon-html5,
+.icon-contact,
+.icon-firefox {
+	color: #ff5b1b;
+}
+
+.icon-database {
+	color: #4774c1;
+}
+
+.icon-commerce-electronic,
+.icon-address,
+.icon-opera {
+	color: #ff1b2d;
+}
+
+.icon-hosting {
+	color: #6161f9;
+}
+
+.icon-chrome {
+	background-image: linear-gradient(
+			                240deg,
+			                rgba(0, 0, 0, 0) 66.4%,
+			                #009c59 0%
+			              ),
+		                linear-gradient(
+		                  0deg,
+		                  rgba(0, 0, 0, 0) 71.5%,
+		                  #e34a35 0%
+		                ),
+		                linear-gradient(
+			                290deg,
+			                rgba(0, 0, 0, 0) 60%,
+			                #e34a35 0%
+		                ),
+		                linear-gradient(
+		                  120deg,
+		                  rgba(0, 0, 0, 0) 66%,
+		                  #ffca38 0%
+		                ),
+		                linear-gradient(
+			                57deg,
+			                rgba(0, 0, 0, 0) 58%,
+			                #ffca38 0%
+		                ),
+		                linear-gradient(
+		                  190deg,
+		                  rgba(0, 0, 0, 0) 58%,
+		                  #009c59 0%
+	                  );
+	-webkit-background-clip: text;
+}
+
+.icon-chrome:after {
+	background-color: #228ef4;
+	border-radius: 50%;
+	height: 5px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-3px, -3px);
+	width: 5px;
+}
+
+.icon-safari {
+	color: #1baaf8;
+}
+
+.icon-explorer {
+	color: #75d7fe;
+}
+
+.icon-edge {
+	color: #1fbbee;
+}
+
+/* Copyright y redes sociales */
+.copyright-and-social:before {
+	border-right: 125px solid rgba(0, 0, 0, 0);
+	right: 50%;
+}
+
+.copyright-and-social:before,
+.copyright-and-social:after {
+	border-bottom: 2em solid #1c1c1c;
+	bottom: 100%;
+	content: '';
+	position: absolute;
+	width: 50%;
+	z-index: 1;
+}
+
+.copyright-and-social {
+	background-color: #1c1c1c;
+	padding: 5px 0 10px 0;
+	position: relative;
+}
+
+.copyright-and-social:after {
+	border-left: 125px solid rgba(0, 0, 0, 0);
+	left: 50%;
+}
+
+.copyright-and-social .copyright-text {
+	color: #8C8989;
+	padding: 10px 0;
+}
+
+.copyright-and-social .social-icons-footer {
+	border-top: solid 1px #404040;
+	float: right;
+	margin-right: 25px;
+	padding: 10px 0;
+}
+
+.copyright-and-social .social-icons-footer .ctn-icons-footer {
+	font-size: 1.3em;
+	margin: 0 10px;
+}
+
+/* Contendor del icono de paleta de colores */
+.copyright-and-social .social-icons-footer .ctn-icon-palette-colors {
+	background-color: #404040;
+	color: #999999;
+	height: 30px;
+	line-height: 30px;
+	transition: background-color 0.3s ease-out,
+							color 0.3s ease-out;
+	width: 30px;
+}
+
+/* Efecto hover contenedor de icono paleta de colores */
+.copyright-and-social .social-icons-footer .ctn-icon-palette-colors:hover,
+.copyright-and-social .social-icons-footer .ctn-icon-palette-colors:focus,
+.copyright-and-social .social-icons-footer .ctn-icon-palette-colors:active {
+	background-color: #010101;
+	color: #cdcdcd;
+}
+
+/* Triangulo inferior del contenedor de la paleta de colores */
+.copyright-and-social .social-icons-footer .ctn-paletts-colors:before {
+	border-bottom: 0;
+	border-left: 10px solid rgba(0, 0, 0, 0);
+	border-right: 20px solid #404040;
+	border-top: 10px solid rgba(0, 0, 0, 0);
+	content: '';
+	position: absolute;
+	right: 5%;
+	top: 95%;
+	transform: rotateZ(315deg);
+}
+
+/* Contenedor paleta de colores */
+.copyright-and-social .social-icons-footer .ctn-paletts-colors {
+	background-color: #404040;
+	border-radius: 15px;
+	bottom: 3em;
+	height: 25px;
+	justify-content: space-around;
+	justify-content: space-evenly; /* Tiene 2 justify-content es para la compatibilidad en internet explorer por lo que tiene space-around */
+	opacity: 0;
+	right: 25px;
+	width: 160px;
+	z-index: 2;
+}
+
+/* Paleta de colores */
+.copyright-and-social .social-icons-footer .ctn-paletts-colors .paletts-colors {
+	box-shadow: 0 2px 5px #000000;
+	height: 1em;
+	width: 1em;
+}

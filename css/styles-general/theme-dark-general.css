@@ -1,0 +1,164 @@
+/* Tema oscuro web general */
+/* Inicialize */
+/* Contenedor barra de scroll */
+.theme-dark::-webkit-scrollbar-thumb {
+	background-color: rgba(44, 44, 44, 0.5);
+}
+
+.theme-dark {
+	background-color: #0c0c0c;
+}
+
+/* Preloader general */
+/* Spinner cargando general */
+.theme-dark .ctn-preloader .animation-preloader .spinner {
+  border-color: rgba(255, 255, 255, 0.2);
+  border-top-color: #ffffff; /* No se identa por orden alfabetico para que no lo sobre-escriba */
+}
+
+/* Texto cargando general */
+.theme-dark .ctn-preloader .animation-preloader .txt-loading .letters-loading:before {
+  color: #ffffff;
+}
+
+.theme-dark .ctn-preloader .animation-preloader .txt-loading .letters-loading {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* Screen preloader */
+.theme-dark .ctn-preloader .loader-section {
+  background-color: #000000;
+}
+
+/* Menú web general */
+.theme-dark .menu-flex {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Capa con transparencia sección ayuda web inicio y web contacto */
+.theme-dark .section-help:before {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Contenedor contenido modales web general */
+.theme-dark .modal .ctn-modal .modal-content {
+	background-color: #151515;
+}
+
+/* Footer pc web general */
+.theme-dark .footer-pc {
+	background-color: #151515;
+}
+
+/* Derechos de autor web general */
+.theme-dark .copyright-and-social:before,
+.theme-dark .copyright-and-social:after {
+	border-bottom-color: #0c0c0c;
+}
+
+.theme-dark .copyright-and-social {
+	background-color: #0c0c0c;
+}
+
+/* Contendor del icono de paleta de colores */
+.theme-dark .copyright-and-social .social-icons-footer .ctn-icon-palette-colors {
+	background-color: #1c1c1c;
+}
+
+.theme-dark .copyright-and-social .social-icons-footer .ctn-icon-palette-colors:hover,
+.theme-dark .copyright-and-social .social-icons-footer .ctn-icon-palette-colors:focus,
+.theme-dark .copyright-and-social .social-icons-footer .ctn-icon-palette-colors:active {
+	background-color: #010101;
+}
+
+/* Triangulo inferior del contenedor de la paleta de colores web general */
+.theme-dark .copyright-and-social .social-icons-footer .ctn-paletts-colors:before {
+	border-right-color: #1c1c1c;
+}
+
+/* Contenedor paleta de colores */
+.theme-dark .copyright-and-social .social-icons-footer .ctn-paletts-colors {
+	background-color: #1c1c1c;
+}
+
+/* Footer mobile web general */
+.theme-dark .footer-mobil {
+	background-color: #101010;
+}
+
+/* Botón footer-mobile "+" web general */
+.theme-dark .footer-mobil .footer-mobile-btn-plus-no-expand {
+	background-color: #101010;
+	box-shadow: none;
+}
+
+/* Efecto del botón para cuando oculte el footer-mobile */
+.theme-dark .footer-mobil .footer-mobile-btn-plus-expand {
+	box-shadow: 0 0 0 2px #555555;
+}
+
+/* Triangulo inferior del contenedor de la burbuja paleta de colores footer-mobile */
+.theme-dark .footer-mobil .social-media .ctn-paletts-colors-footer-mobil:before {
+	border-top-color: #1c1c1c;
+}
+
+/* Contenedor burbuja paleta de colores footer-mobile */
+.theme-dark .footer-mobil .social-media .ctn-paletts-colors-footer-mobil {
+	background-color: #1c1c1c;
+}
+
+/* Buttons */
+/* Botón sección ayuda, botón formulario de contacto y botón de cerrar en el footer de los modales */
+.theme-dark .btn-shadow {
+	background-color: #1d1d1d;
+	box-shadow: 1px 0 #000000,
+							0 1px #000000,
+							2px 1px #000000,
+							1px 2px #000000,
+							3px 2px #000000,
+							2px 3px #000000,
+							4px 3px #000000,
+							3px 4px #000000,
+							5px 4px #000000,
+							4px 5px #000000,
+							6px 5px #000000,
+							5px 6px #000000;
+}
+
+/* Hover botón sección ayuda, botón formulario de contacto y botón de cerrar en el footer de los modales */
+.theme-dark .btn-shadow:hover,
+.theme-dark .btn-shadow:focus {
+	background-color: #111111;
+}
+
+/* Botón cambiar columnas de servicios quiénes somos y soporte */
+.theme-dark .section-services .ctn-icon-col-service,
+.theme-dark .ctn-icon-col-about-us,
+.theme-dark .ctn-icon-col-support {
+	background-color: #181818;
+	box-shadow: 0 0 1px 1px inset;
+}
+
+/* Hover botón cambiar columnas de servicios quiénes somos y soporte */
+.theme-dark .section-services .ctn-icon-col-service:hover,
+.theme-dark .section-services .ctn-icon-col-service:focus,
+.theme-dark .section-services .ctn-icon-col-service:active,
+.theme-dark .ctn-icon-col-about-us:hover,
+.theme-dark .ctn-icon-col-about-us:focus,
+.theme-dark .ctn-icon-col-about-us:active,
+.theme-dark .ctn-icon-col-support:hover,
+.theme-dark .ctn-icon-col-support:focus,
+.theme-dark .ctn-icon-col-support:active {
+	background-color: #090909;
+}
+
+/* Botón de ir arriba web general */
+.theme-dark .btn-go-to-up {
+	background-color: #151515;
+}
+
+/* Efecto hover botón de ir arriba web general */
+.theme-dark .btn-go-to-up:hover,
+.theme-dark .btn-go-to-up:focus {
+	background-color: #010101;
+}

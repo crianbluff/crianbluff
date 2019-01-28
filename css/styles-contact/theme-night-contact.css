@@ -1,0 +1,15 @@
+/* Tema noche web contacto */
+/* Formulario de contacto web contacto */
+.theme-night .ctn-form-contact {
+	background-color: #111115;
+}
+
+/* Contáctanos web contacto */
+.theme-night .ctn-contact-us {
+	background-color: #000009;
+}
+
+/* Icono contáctanos web contacto */
+.theme-night .ctn-contact-us .ctn-box-contact-us .icon-contact-us {
+	background-color: #111115;
+}

@@ -1,0 +1,15 @@
+/* Tema oscuro web contacto */
+/* Formulario de contacto web contacto */
+.theme-dark .ctn-form-contact {
+	background-color: #151515;
+}
+
+/* Contáctanos web contacto */
+.theme-dark .ctn-contact-us {
+	background-color: #0c0c0c;
+}
+
+/* Icono contáctanos web contacto */
+.theme-dark .ctn-contact-us .ctn-box-contact-us .icon-contact-us {
+	background-color: #151515;
+}

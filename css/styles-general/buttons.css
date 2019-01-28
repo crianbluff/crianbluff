@@ -1,0 +1,115 @@
+/* Botón sección ayuda, botón formulario de contacto y botón de cerrar en el footer de los modales */
+.btn-shadow {
+	background-color: #404040;
+	border-radius: 2px;
+	box-shadow: 1px 0px #202020,
+							0px 1px #202020,
+							2px 1px #202020,
+							1px 2px #202020,
+							3px 2px #202020,
+							2px 3px #202020,
+							4px 3px #202020,
+							3px 4px #202020,
+							5px 4px #202020,
+							4px 5px #202020,
+							6px 5px #202020,
+							5px 6px #202020;
+	font: normal 12px 'montserrat', sans-serif;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+  transition: background-color 0.5s ease,
+              box-shadow 0.2s ease,
+              transform 0.2s ease;
+}
+
+/* Hover botón sección ayuda, botón formulario de contacto y botón de cerrar en el footer de los modales */
+.btn-shadow:hover,
+.btn-shadow:focus {
+	background-color: #5a5a5a;
+}
+
+/* Efecto cuando dan click en el botón sección ayuda, botón formulario de contacto y botón de cerrar en el footer de los modales */
+.btn-shadow:active {
+	box-shadow: 1px 0px #202020,
+	 						0px 1px #202020,
+	 						2px 1px #202020,
+	 						1px 2px #202020,
+	 						3px 2px #202020,
+	 						2px 3px #202020,
+	 						4px 3px #202020,
+	 						3px 4px #202020;
+	transform: translate(2px);
+}
+
+/* Botón cambiar columnas de servicios quiénes somos y soporte */
+.section-services .ctn-icon-col-service, 
+.ctn-icon-col-about-us,
+.ctn-icon-col-support {
+	background-color: #d4d4d4;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #a4a4a4 inset;
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	right: 5%;
+	transition: background-color 0.3s ease;
+	width: 40px;
+}
+
+/* Botón cambiar quiénes somos */
+.ctn-icon-col-about-us {
+	transition: border-radius 0.3s ease;
+}
+
+/* Hover botón cambiar columnas de servicios quiénes somos y soporte */
+.section-services .ctn-icon-col-service:hover,
+.section-services .ctn-icon-col-service:focus,
+.ctn-icon-col-about-us:hover,
+.ctn-icon-col-about-us:focus, 
+.ctn-icon-col-support:hover,
+.ctn-icon-col-support:focus {
+	background-color: #c4c4c4;
+}
+
+/* Iconos de cambiar columnas */
+.section-services .ctn-icon-col-service > i,
+.ctn-icon-col-about-us > i,
+.ctn-icon-col-support > i {
+	transition: transform 0.3s ease-out;
+}
+
+/* Active botón cambiar columnas de servicios quiénes somos y soporte */
+.section-services .ctn-icon-col-service:active > i,
+.ctn-icon-col-about-us:active > i,
+.ctn-icon-col-support:active > i {
+	transform: rotateZ(360deg);
+}
+
+/* Botón ir arriba */
+.btn-go-to-up {
+	background-color: #404040;
+	bottom: 0.5em;
+	height: 3em;
+	line-height: 3em;
+	right: 0.5em;
+	transition: background-color 0.5s ease;
+	width: 3em;
+	z-index: 500;
+}
+
+.btn-go-to-up:hover,
+.btn-go-to-up:focus {
+	background-color: #000000;
+}
+
+/* Cuando hacen hover y cuando le den click al botón, el icono de la manito arriba señale hacia arriba y al igual con el del footer mobil */
+.btn-go-to-up:active > .icon-go-to-up,
+.footer-mobil .social-media .btn-go-to-up-footer:active > .icon-go-to-up-footer {
+	transform: translateY(-50%);
+	transition: transform 0.5s ease;
+}
+
+/* Efecto para cuando se oculte el botón de ir arriba o se muestre mediante una validación de jquery */
+.hide-btn-go-to-up {
+	transform: translate3d(80px, 0, 0);
+}

@@ -1,0 +1,10 @@
+/* Linkeados generales después de las hojas de estilos únicas de esa web */
+@import url('modals.css');
+@import url('footer-pc.css');
+@import url('footer-mobile.css');
+@import url('buttons.css');
+@import url('shared-themes.css');
+@import url('theme-night-general.css');
+@import url('theme-dark-general.css');
+@import url('keyframes.css');
+@import url('responsive.css');

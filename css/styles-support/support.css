@@ -1,0 +1,133 @@
+@import url('../styles-general/help.css');
+@import url('theme-night-support.css');
+@import url('theme-dark-support.css');
+
+/* Imágenes slider soporte */
+.ctn-slider .slider .section-slider .slider-one-support {
+	background-image: url('../../imgs/imgs-general/sliders/slider-support/support-1.jpg');
+}
+
+.ctn-slider .slider .section-slider .slider-two-support {
+	background-image: url('../../imgs/imgs-general/sliders/slider-support/support-2.jpg');
+}
+
+.ctn-slider .slider .section-slider .slider-three-support {
+	background-image: url('../../imgs/imgs-general/sliders/slider-support/support-3.jpg');
+}
+
+.ctn-slider .slider .section-slider .slider-four-support {
+	background-image: url('../../imgs/imgs-general/sliders/slider-support/support-4.jpg');
+}
+
+.ctn-slider .slider .section-slider .slider-five-support {
+	background-image: url('../../imgs/imgs-general/sliders/slider-support/support-5.jpg');
+}
+
+/* Soporte */
+.ctn-support {
+	padding: 50px 0;
+}
+
+/* Botón cambiar columnas soporte */
+.ctn-icon-col-support {
+	top: 15px;
+}
+
+/* Contenedor caja de información soporte */
+.ctn-support .ctn-box-support {
+	background-color: #e1e1e1;
+	box-shadow: 0 0 1px #777777 inset;
+	justify-content: space-around;
+	justify-content: space-evenly; /* Tiene 2 justify-content es para la compatibilidad en internet explorer por lo que tiene space-around */
+	margin: 20px 0;
+	padding: 0 1em;
+}
+
+/* Icono sección de soporte */
+.ctn-support .ctn-box-support .icon-support {
+	background-color: #e8e8e8;
+	box-shadow: 1px 2px 0 0 #707070 inset;
+	color: #505050;
+	font-size: 1.5em;
+	height: 75px;
+	line-height: 75px;
+	text-shadow: 1px 1px 1px #ffffff;
+	width: 75px;
+}
+
+/* Contenedor contenido soporte */
+.ctn-support .ctn-box-support .ctn-content-support {
+	padding: 1em;
+}
+
+/* Título contenido soporte */
+.ctn-support .ctn-box-support .ctn-content-support .title-content-support {
+	color: #1c1c1c;
+	font: normal 1.5em 'dancing-script', sans-serif;
+	margin-bottom: 10px;
+}
+
+/* Contenido soporte */
+.ctn-support .ctn-box-support .ctn-content-support .content-support {
+	font: normal 14px 'montserrat', sans-serif;
+	line-height: 20px;
+}
+
+/* Navegación por tabs */
+.navegation-tabs {
+	margin: 4.5em auto;
+	width: 75%;
+}
+
+/* Contenedor links navegación por tabs */
+.navegation-tabs .ctn-tabs-links {
+	top: 1px;
+}
+
+/* Contenedor de iconos de la navegación por tabs */
+.navegation-tabs .ctn-tabs-links .ctn-icons-tabs {
+	background-color: #dddddd;
+	border: 1px solid #bbbbbb;
+	border-bottom-color: rgba(0, 0, 0, 0);
+	border-radius: 5px 5px 0 0;
+	color: #4a4a4a;
+	line-height: 50px;
+	margin: 0 1px;
+	transition: background-color 0.3s ease-out,
+	            font-size 0.3s ease-out;
+	width: 150px;
+}
+
+/* Efecto hover en el contenedor de los iconos navegación por tabs */
+.navegation-tabs .ctn-tabs-links .ctn-icons-tabs:hover,
+.navegation-tabs .ctn-tabs-links .ctn-icons-tabs:focus,
+.navegation-tabs .ctn-tabs-links .ctn-icons-tabs:active {
+	background-color: #cacaca;
+}
+
+/* Contenedor de iconos cuando esta activo navegación por tabs */
+.navegation-tabs .ctn-tabs-links .ctn-icons-tabs.active {
+	background-color: #f9f9f9;
+	font-size: 25px;
+	z-index: 1;
+}
+
+/* Contenedor de cada contenido navegación por tabs */
+.navegation-tabs .ctn-tabs-contents-item {
+	background-color: #f9f9f9;
+	border: 1px solid #bbbbbb;
+	margin: 0 1px;
+	padding: 1em;
+}
+
+/* Título de cada contenido navegación por tabs */
+.navegation-tabs .ctn-tabs-contents-item .title-content-navegation-tabs {
+	font-family: 'poiret-one', sans-serif;
+	margin-bottom: 15px;
+}
+
+/* Contenido navegación por tabs */
+.navegation-tabs .ctn-tabs-contents-item .content-navegation-tabs {
+	font-family: 'montserrat', sans-serif;
+	font-size: 15px;
+}

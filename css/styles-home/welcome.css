@@ -1,0 +1,32 @@
+/* Bienvenida */
+.ctn-welcome {
+	background-color: #f8f8f8;
+	box-shadow: 1px 1px 1px #cdcdcd;
+	padding: 50px 0;
+}
+
+/* Título bienvenida */
+.ctn-welcome .section-welcome-title {
+	font: normal 15px 'montserrat', sans-serif;
+	margin: 10px 0;
+}
+
+/* Información bienvenida */
+.ctn-welcome .info-section-welcome {
+	margin: 0 0 5px;
+	padding: 5px 0;
+}
+
+/* Frase */
+.ctn-welcome .section-welcome-phrase {
+	font: bold 2em 'dancing-script', sans-serif;
+	line-height: 60px;
+	padding-top: 40px;
+}
+
+/* Autor de frase */
+.ctn-welcome .section-welcome-author-phrase {
+	font: bold 1em 'montserrat', sans-serif;
+	padding-top: 15px;
+	text-align: right;
+}

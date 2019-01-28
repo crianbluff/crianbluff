@@ -1,0 +1,173 @@
+/* Menú */
+.menu-flex {
+	background-color: rgba(151, 153, 162, 0.5);
+	font-family: 'poiret-one', sans-serif;
+	left: 0;
+	top: 0;
+	transition: background-color 0.5s ease-out,
+							transform 0.5s ease;
+	z-index: 700;
+}
+
+/* Efecto del menú dependiendo la dirección del scroll, validación mediante jquery */
+.scroll-down {
+	transform: translateY(-100%);
+}
+
+/* Validación para cuando el scroll esta posicionado fuera de la frase del slider */
+.menu-flex-no-slider {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menu-flex .menu {
+	flex-direction: row;
+	justify-content: space-between;
+	margin: auto;
+	max-width: 1000px;
+	width: 90%;
+}
+
+.menu-flex .menu .enlaces.active {
+	height: 100%;
+}
+
+/* Logo menú */
+.menu-flex .menu .logo-menu {
+	margin-right: 1em;
+}
+
+/* En caso de que en vez de colocar el span con la clase "title-logo" se coloque un logo de imágen */
+/*.menu-flex .menu .logo-menu .img-logo {
+	height: 22px;
+	vertical-align: top;
+	width: 150px;
+}*/
+
+/* Logo menú */
+.menu-flex .menu .logo-menu .title-logo-menu {
+	font: normal 2em 'dancing-script', sans-serif;
+	text-shadow: 1px 1px 5px #000000;
+	transition: text-shadow 0.3s ease-in-out;
+}
+
+/* Efecto hover en el logo del menú */
+.menu-flex .menu .logo-menu .title-logo-menu:hover,
+.menu-flex .menu .logo-menu .title-logo-menu:focus,
+.menu-flex .menu .logo-menu .title-logo-menu:active {
+	text-shadow: 1px 1px 15px #000000;
+}
+
+/* Efecto hover en el logo del menú cuando el menu esta en oscuro */
+.menu-flex-no-slider .menu .logo-menu .title-logo-menu:hover,
+.menu-flex-no-slider .menu .logo-menu .title-logo-menu:focus,
+.menu-flex-no-slider .menu .logo-menu .title-logo-menu:active {
+	-webkit-background-clip: text;
+  background-image: linear-gradient(
+			                #ffffff 50%,
+			                #ffffff 100%
+		                );
+	text-shadow: 0 0 15px #ffffff;
+}
+
+/* Botón hamburguer */
+.menu-flex .menu .btn-menu {
+	text-shadow: 1px 1px 5px #000000;
+	transform: translateX(50%);
+	transition: transform 0.3s ease-in-out;
+}
+
+/* Botón hamburguer activado */
+/* El transform translate en x es 100% - el height menos el width menos el margin * 2 mas el height divido en 3 */
+/* El transform translate en y es 50% - el height más el margin por 2 */
+.menu-flex .menu .btn-menu.active-hamburguer {
+	transform: translate(calc(100% - 8px), calc(50% - 13px)) rotateZ(-45deg);
+	transition: transform 0.3s ease-in-out;
+}
+
+/* Lineas hamburguesas */
+.menu-flex .menu .btn-menu .line-hamburguer {
+	box-shadow: 1px 1px 1px #1c1c1c;
+  height: 3px;
+	margin: 5px 0;
+  width: 25px;
+	transition: transform 0.3s ease-in-out,
+							width 0.3s 0.3s ease-in-out;
+}
+
+/* Segunda línea hamburguesa activa */
+.menu-flex .menu .active-hamburguer .line-hamburguer:nth-child(2) {
+	transition-delay: 0s;
+	width: 0px;
+}
+
+/* Tercera línea hamburguesa activa */
+.menu-flex .menu .active-hamburguer .line-hamburguer:nth-child(3) {
+	/* El transform translateY es de 50% menos el doble del margin + el doble del height mas la mitad del height de la clase line-hamburguer */
+	transform: translateY(calc(50% - 17.5px)) rotateZ(-90deg);
+}
+
+/* Links categorías */
+.menu-flex .menu .enlaces {
+	text-align: right;
+}
+
+.menu-flex .menu .enlaces .links-menu:before {
+	height: 0;
+	transition: background-color 0.3s ease-out,
+	            height 0.3s ease-out;
+	width: 100%;
+	z-index: -1;
+}
+
+.menu-flex .menu .enlaces .links-menu {
+	font-size: 1em;
+	padding: 1em;
+	text-shadow: 1px 1px 5px #000000;
+}
+
+/* Efectos de hover en las categorías dependiendo de que menú este si el oscuro o el claro */
+.menu-flex .menu .enlaces .links-menu:hover:before,
+.menu-flex .menu .enlaces .links-menu:focus:before,
+.menu-flex .menu .enlaces .links-menu:active:before {
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 100%;
+}
+
+.menu-flex .menu .enlaces .links-menu-no-slider {
+	transition: color 0.3s ease-out;
+}
+
+.menu-flex .menu .enlaces .links-menu-no-slider:hover:before,
+.menu-flex .menu .enlaces .links-menu-no-slider:focus:before,
+.menu-flex .menu .enlaces .links-menu-no-slider:active:before {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-flex .menu .enlaces .links-menu-no-slider:hover,
+.menu-flex .menu .enlaces .links-menu-no-slider:focus,
+.menu-flex .menu .enlaces .links-menu-no-slider:active {
+	color: #1c1c1c;
+	text-shadow: 1px 1px 1px rgba(28, 28, 28, 0.5);
+}
+
+/* Validación cuando esta en esa web y el before con el content none es para que no pueda hacer hover sobre la web que este */
+.menu-flex .menu .enlaces .links-menu-active:before,
+.menu-flex .menu .enlaces .links-menu-active-no-slider:before {
+	content: none;
+}
+
+/* Validación para que sepa sobre que página esta */
+.menu-flex .menu .enlaces .links-menu-active {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.menu-flex .menu .enlaces .links-menu-active-no-slider {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #1c1c1c;
+	text-shadow: 1px 1px 1px rgba(28, 28, 28, 0.5);
+}
+
+/* Iconos menú */
+.menu-flex .menu .enlaces .icons-menu {
+	margin-right: 5px;
+}

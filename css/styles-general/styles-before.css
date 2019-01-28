@@ -1,0 +1,6 @@
+/* Linkeados generales antes de las hojas de estilos únicas de esa web */
+@import url('font-awesome-min.css');
+@import url('inicialize.css');
+@import url('preloader.css');
+@import url('menu-flex.css');
+@import url('slider.css');

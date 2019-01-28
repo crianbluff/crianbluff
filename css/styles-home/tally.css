@@ -1,0 +1,42 @@
+/* Tally */
+.ctn-tally {
+	padding: 25px 0;
+}
+
+/* Acordeón tally */
+.ctn-tally .acordeon {
+  margin-bottom: 25px;
+}
+
+/* Contenedor del los títulos del acordeón e iconos "+" tally */
+.ctn-tally .acordeon .ctn-acordeon .ctn-title-content-acordeon {
+	background-color: #d1d1d1;
+	box-shadow: 0 0 0 1px #a4a4a4;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+/* Títulos del acordeón */
+.ctn-tally .acordeon .ctn-title-content-acordeon .title-content-acordeon {
+	font: bold 1em 'Montserrat', sans-serif;
+}
+
+/* Iconos del acordeón y efecto para cuando el acordeón se cierra tally */
+.ctn-tally .acordeon .ctn-title-content-acordeon .icon-acordeon {
+	transform: rotateZ(-180deg);
+	transition: transform 0.5s ease-out;
+}
+
+/* Efecto en el icono para cuando el acordeón se abre tally */
+.ctn-tally .acordeon .ctn-title-content-acordeon .rotate-icon-acordeon {
+	transform: rotateZ(45deg);
+}
+
+/* Contenido del acordeón tally */
+.ctn-tally .acordeon .ctn-acordeon .ctn-content-acordeon {
+	box-shadow: 0 1px 0 1px #a4a4a4;
+}
+
+.ctn-tally .acordeon .ctn-content-acordeon .content-acordeon {
+	padding: 2em;
+}

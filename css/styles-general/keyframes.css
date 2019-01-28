@@ -1,0 +1,244 @@
+.fadein,
+.fadeinup,
+.fadeindown,
+.fadeinleft,
+.fadeinright {
+	animation: fadein 2s forwards;
+	opacity: 0;
+}
+
+/* Animación para que aparezca con opacidad desde arriba */
+.fadeinup {
+	transform: translate3d(0, -100%, 0);
+}
+
+/* Animación para que aparezca con opacidad desde arriba */
+.fadeindown {
+	transform: translate3d(0, 100%, 0);
+}
+
+/* Animación para que aparezca con opacidad desde la izquierda lejos */
+.fadeinleft {
+	transform: translate3d(-100%, 0, 0);
+}
+
+/* Animación para que aparezca con opacidad desde la derecha lejos */
+.fadeinright {
+	transform: translate3d(100%, 0, 0);
+}
+
+/* Animación para que aparezca rebotando */
+.bouncein {
+	animation: bouncein 2s forwards;
+}
+
+/* Animación para que aparezca rebotando desde la izquierda */
+.bounceinleft {
+	animation: bounceinleft 2s forwards;
+}
+
+/* Animación para que aparezca rebotando desde la derecha */
+.bounceinright {
+	animation: bounceinright 2s forwards;
+}
+
+/* Animación para que aparezca rebotando como una gelatina */
+.gelatine {
+	animation: gelatine 2s forwards;
+}
+
+/* Animación de temblar de un lado a otro */
+.shake {
+	animation: shake 1s 1;
+}
+
+/* Animación del preloader */
+@keyframes spinner {
+	to {
+		transform: rotateZ(1turn);
+	}
+}
+
+/* Animación de las letras cargando del preloader */
+@keyframes letters-loading {
+  0%,
+  75%,
+  100% {
+    transform: rotateY(-90deg);
+  }
+
+  25%,
+  50% {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+
+/* Animación para que aparezca con opacidad */
+@keyframes fadein {
+  to {
+  	opacity: 1;
+  	transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Animación para que aparezca rebotando */
+@keyframes bouncein {
+	0%,
+	20%,
+	40%,
+	60%,
+	80%,
+	100% {
+		transition-timing-function: cubic-bezier(0.1, 0.1, 0.1, 1);
+	}
+
+	0% {
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+
+	20% {
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+
+	40% {
+		transform: scale3d(0.9, 0.9, 0.9);
+	}
+
+	60% {
+		opacity: 1;
+		transform: scale3d(1.03, 1.03, 1.03);
+	}
+
+	80% {
+		transform: scale3d(0.97, 0.97, 0.97);
+	}
+}
+
+/* Animación para que aparezca rebotando desde la izquierda */
+@keyframes bounceinleft {
+	0%,
+	60%,
+	75%,
+	90%,
+	100% {
+		transition-timing-function: cubic-bezier(0.1, 0.1, 0.1, 1);
+	}
+
+	0% {
+		transform: translate3d(-3000px, 0, 0);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translate3d(25px, 0, 0);
+	}
+
+	75% {
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	90% {
+		transform: translate3d(5px, 0, 0);
+	}
+}
+
+/* Animación para que aparezca rebotando desde la derecha */
+@keyframes bounceinright {
+	0%,
+	60%,
+	75%,
+	90%,
+	100% {
+		transition-timing-function: cubic-bezier(0.1, 0.1, 0.1, 1);
+	}
+
+	0% {
+		transform: translate3d(3000px, 0, 0);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translate3d(-25px, 0, 0);
+	}
+
+	75% {
+		transform: translate3d(10px, 0, 0);
+	}
+
+	90% {
+		transform: translate3d(-5px, 0, 0);
+	}
+}
+
+/* Animación para que aparezca rebotando como una gelatina */
+@keyframes gelatine {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+	
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+	
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+/* Animación de las flechas que saltan para señalar a la siguiente sección */
+@keyframes jump-arrow {
+	0%,
+	20%,
+	55%,
+	80%,
+	100% {
+	  transform: translate3d(0, 0, 0);
+	}
+
+	40% {
+		transform: translate3d(0, -15px, 0);
+	}
+
+	70% {
+		transform: translate3d(0, -10px, 0);
+	}
+
+	90% {
+		transform: translate3d(0, -5px, 0);
+	}
+}
+
+/* Animación de los mensajes de error en el formulario de conctacto web contacto */
+@keyframes shake {
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translate3d(10px, 0, 0);
+	}
+}

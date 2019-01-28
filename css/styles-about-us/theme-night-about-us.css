@@ -1,0 +1,30 @@
+/* Tema noche web quiénes somos */
+/* Contenedor quiénes somos, lenguajes, frameworks, cms y otras herramientas web quiénes somos */
+.theme-night .ctn-about-us,
+.theme-night .ctn-languages,
+.theme-night .ctn-frameworks,
+.theme-night .ctn-cms,
+.theme-night .ctn-tools-developer {
+	box-shadow: none;
+}
+
+/* Contenedor quiénes somos, lenguajes, otras herramientas web quiénes somos */
+.theme-night .ctn-about-us,
+.theme-night .ctn-frameworks,
+.theme-night .ctn-tools-developer {
+	background-color: #000009;
+}
+
+/* Contenedor lenguajes, cms web quiénes somos */
+.theme-night .ctn-languages,
+.theme-night .ctn-cms {
+	background-color: #111115;
+}
+
+/* Hover en el contenedor de las imágenes lenguajes, frameworks, cms y otras herramientas y se hace en la imágen que esta dentro de ese contenedor web quiénes somos */
+.theme-night .ctn-img-development:hover > .img-development,
+.theme-night .ctn-img-development:focus > .img-development,
+.theme-night .ctn-img-development:active > .img-development {
+	background-color: #111119;
+	box-shadow: 0 0 5px 3px #a7a7a7 inset;
+}

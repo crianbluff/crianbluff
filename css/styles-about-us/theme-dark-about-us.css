@@ -1,0 +1,30 @@
+/* Tema oscuro web quiénes somos */
+/* Contenedor quiénes somos, lenguajes, frameworks, cms y otras herramientas web quiénes somos */
+.theme-dark .ctn-about-us,
+.theme-dark .ctn-languages,
+.theme-dark .ctn-frameworks,
+.theme-dark .ctn-cms,
+.theme-dark .ctn-tools-developer {
+	box-shadow: 0 1px 5px #000000;
+}
+
+/* Contenedor quiénes somos, lenguajes, otras herramientas web quiénes somos */
+.theme-dark .ctn-about-us,
+.theme-dark .ctn-frameworks,
+.theme-dark .ctn-tools-developer {
+	background-color: #0c0c0c;
+}
+
+/* Contenedor lenguajes, cms web quiénes somos */
+.theme-dark .ctn-languages,
+.theme-dark .ctn-cms {
+	background-color: #111111;
+}
+
+/* Hover en el contenedor de las imágenes lenguajes, frameworks, cms y otras herramientas y se hace en la imágen que esta dentro de ese contenedor web quiénes somos */
+.theme-dark .ctn-img-development:hover > .img-development,
+.theme-dark .ctn-img-development:focus > .img-development,
+.theme-dark .ctn-img-development:active > .img-development {
+	background-color: #090909;
+	box-shadow: 0 0 5px 3px #cacaca inset;
+}

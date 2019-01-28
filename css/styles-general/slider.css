@@ -1,0 +1,116 @@
+/* Slider */
+.ctn-slider {
+	margin-bottom: 100vh;
+}
+
+.ctn-slider .slider {
+	backface-visibility: hidden; /* Se coloca para que no se dañe lo del attachment fixed en pantallas mas pequeñas */
+	cursor: url('../../imgs/imgs-general/cursores/pointer/cursor-pointer.png'), pointer; /* Se deja de primero el pointer para explorer y en los demas navegadores por cascada lo sobre-escribe */
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+	overflow: hidden;
+	z-index: 600;
+}
+
+.ctn-slider .slider:active {
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+}
+
+.ctn-slider .slider .slider-inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: left 0.3s cubic-bezier(0.18, 0.89, 0.32, 1);
+}
+
+.ctn-slider .slider .section-slider {
+	float: left;
+}
+
+.ctn-slider .slider .section-slider .img-slider:before {
+	background-attachment: fixed;
+	background-image: radial-gradient(
+											rgba(0, 0, 0, 0.4) 15%,
+											rgba(0, 0, 0, 0.2) 15%
+										);
+	background-size: 5px 5px;
+	height: 100%;
+}
+
+.ctn-slider .slider .section-slider .img-slider {
+	background: #202020 center center / cover no-repeat fixed;
+	height: 100vh;
+	filter: grayscale(20%);
+	justify-content: center;
+}
+
+/* Titulos slider */
+.ctn-slider .slider .section-slider .title-slider {
+	font: normal 4em 'dancing-script', sans-serif;
+	text-shadow: 1px 1px 10px #000000;
+}
+
+.ctn-slider .slider-nav {
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/* Flechas del slider */
+.ctn-slider .slider-nav .arrows {
+	align-items: center;
+	display: flex;
+	font-size: 25px;
+  height: 100vh;
+	text-shadow: 1px 1px 5px #000000;
+	top: 0;
+  transition: color 0.3s ease-out,
+ 							transform 0.3s ease-out;
+  z-index: 600;
+}
+
+/* Flechas izquierda del slider */
+.ctn-slider .slider-nav .prev {
+	left: 2%;
+}
+
+/* Flechas derecha del slider */
+.ctn-slider .slider-nav .next {
+	right: 2%;
+}
+
+/* Efecto cuando le dan click a las flechas del slider */
+.ctn-slider .slider-nav .prev:active {
+	transform: translateX(-5px);
+}
+
+.ctn-slider .slider-nav .next:active {
+	transform: translateX(5px);
+}
+
+/* Flecha de ir a la siguiente sección */
+.ctn-slider .move-slider {
+	bottom: 2%;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 20px;
+	left: 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	z-index: 600;
+}
+
+.ctn-slider .move-slider .arrow-down-slider {
+	animation: jump-arrow 2.5s infinite;
+	font-size: 25px;
+}
+
+/* Efecto hover flecha de ir a la siguiente sección */
+.ctn-slider .move-slider .arrow-down-slider:hover,
+.ctn-slider .move-slider .arrow-down-slider:focus,
+.ctn-slider .move-slider .arrow-down-slider:active {
+	animation-play-state: paused;
+	color: #ffffff;
+}
