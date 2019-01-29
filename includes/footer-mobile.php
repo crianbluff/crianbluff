@@ -10,9 +10,17 @@
 		<div class="flex-a social-media">
 			<!-- Paleta de colores -->
 			<div id="ctn-paletts-colors-footer-mobil" class="flex-a fixed ctn-paletts-colors-footer-mobil">
-				<button class="radius bgcolor-github link-modal paletts-colors-footer-mobil palette-color-dark" data-palette-color="oscuro" data-modal="#modal-themes"></button>
-				<button class="radius bgcolor-facebook link-modal paletts-colors-footer-mobil palette-color-night" data-palette-color="noche" data-modal="#modal-themes"></button>
-				<button class="radius bgcolor-white link-modal paletts-colors-footer-mobil palette-color-light" data-palette-color="dia" data-modal="#modal-themes"></button>
+				<button class="radius color-github txt-center link-modal paletts-colors-footer-mobil palette-color-dark" data-palette-color="oscuro" data-modal="#modal-themes">
+					<i class="fa fa-tint" aria-hidden="true"></i>
+				</button>
+
+				<button class="radius color-linkedin txt-center link-modal paletts-colors-footer-mobil palette-color-night" data-palette-color="noche" data-modal="#modal-themes">
+					<i class="fa fa-moon-o" aria-hidden="true"></i>
+				</button>
+				
+				<button class="radius icon-email txt-center link-modal paletts-colors-footer-mobil palette-color-light" data-palette-color="dia" data-modal="#modal-themes">
+					<i class="fa fa-sun-o" aria-hidden="true"></i>
+				</button>
 			</div>
 
 			<div class="flex" title="Cambiar Tema">

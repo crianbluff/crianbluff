@@ -89,12 +89,6 @@
 /* Botón footer-mobile "+" web general */
 .theme-dark .footer-mobil .footer-mobile-btn-plus-no-expand {
 	background-color: #101010;
-	box-shadow: none;
-}
-
-/* Efecto del botón para cuando oculte el footer-mobile */
-.theme-dark .footer-mobil .footer-mobile-btn-plus-expand {
-	box-shadow: 0 0 0 2px #555555;
 }
 
 /* Triangulo inferior del contenedor de la burbuja paleta de colores footer-mobile */

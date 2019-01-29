@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	// La variable "urlHome" significa la url del inicio de la página web
-	const urlHome = 'https://crianbluff.com';
+	const urlHome = 'https://crianbluff.github.io/crianbluff';
 
 	// La variable time significa para calcular el tiempo en las condicionales de agregar o quitar las hojas de estilo del tema oscuro
 	let time = new Date();
@@ -72,6 +72,9 @@ $(document).ready(function() {
 		$('.slider-four').addClass('slider-four-contact').removeClass('slider-four').children('.title-slider').text('Cualquier duda cuenta con nosotros');
 		$('.slider-five').addClass('slider-five-contact').removeClass('slider-five').children('.title-slider').text('No dudes en contactarnos');
 	}
+
+	// Si se encuentra en el index o en la url que lleva al home se marque el link de inicio
+	location.href.indexOf('index') > -1 || location == urlHome ? $('#menu-link-home').addClass('links-menu-active') : '';
 
 	// Validación para cuando le den click estando en otra pagina que no sea la de inicio lo linkee a la sección servicios del footer pc
 	// De lo contrario lo lleve a la sección de servicios

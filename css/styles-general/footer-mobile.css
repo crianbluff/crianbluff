@@ -9,7 +9,9 @@
 	transform-origin: bottom;
 	transform: perspective(500px) rotateX(90deg);
 	transition: opacity 0.3s ease,
-	            transform 0.5s ease;
+							transform 0.5s ease,
+							visibility 0.5s ease;
+	visibility: hidden;
 	z-index: 500;
 }
 
@@ -17,7 +19,18 @@
 /* Cuando pasa de sierta posición del scroll y hace el efecto como si se levantara o se recostara en caso de que se oculte */
 .active-footer-mobil {
 	opacity: 1;
-	transform: perspective(500px) rotateX(0deg);
+	transform: perspective(500px) rotateX(0);
+	transition: opacity 0.3s ease,
+							transform 0.5s ease;
+	visibility: visible;
+}
+
+/* Efecto para esconder el footer-mobile */
+.hide-footer-mobile {
+	transform: translate3d(0, 100px, 0); /* En caso de que no se dejen se deja en el html por fuera de la sección */
+	transition: opacity 1s ease,
+							transform 1s ease,
+							visibility 0.5s ease;
 }
 
 .footer-mobil .social-media {
@@ -41,20 +54,45 @@
 .footer-mobil .social-media .ctn-paletts-colors-footer-mobil {
 	background-color: rgba(55, 55, 55, 0.7);
 	border-radius: 5px;
-	bottom: 4.5em;
-	height: 30px;
+	bottom: 4.75em;
+	height: 2.25em;
 	justify-content: space-around;
 	justify-content: space-evenly; /* Tiene 2 justify-content es para la compatibilidad en internet explorer por lo que tiene space-around */
-	left: 10px;
- 	opacity: 0;
-	width: 25%;
+	left: 1%;
+	opacity: 0;
+	transform: translate3d(-33.3vw, 0, 0);
+	transition: opacity 1s ease-out,
+							transform 1s ease-out,
+							visibility 1s ease-out;
+	width: calc(33.3% - 1px);
+}
+
+.footer-mobil .social-media .ctn-paletts-colors-footer-mobil.active {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+	visibility: visible;
 }
 
 /* Paleta de colores footer mobil */
 .footer-mobil .social-media .ctn-paletts-colors-footer-mobil .paletts-colors-footer-mobil {
-	box-shadow: 0 2px 5px #000000;
-	height: 1em;
-	width: 1em;
+	background-color: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0 1px #000000;
+	line-height: 2em;
+	height: 1.75em;
+	transition: background-color 0.3s ease-out;	
+  width: 1.75em;
+}
+
+/* Efecto hover, focus y active en paleta de colores footer mobil */
+.footer-mobil .social-media .ctn-paletts-colors-footer-mobil .paletts-colors-footer-mobil:hover,
+.footer-mobil .social-media .ctn-paletts-colors-footer-mobil .paletts-colors-footer-mobil:focus,
+.footer-mobil .social-media .ctn-paletts-colors-footer-mobil .paletts-colors-footer-mobil:active {
+	background-color: rgba(255, 255, 255, 0.2);	
+}
+
+/* Iconos paleta de colores footer mobil */
+.footer-mobil .social-media .ctn-paletts-colors-footer-mobil .paletts-colors-footer-mobil i{
+	font-size: 20px;
 }
 
 .footer-mobil .social-media .link-social-media:before,
@@ -73,10 +111,10 @@
 	border: 3px solid rgba(0, 0, 0, 0);
 	box-sizing: content-box;
 	font-size: 1.5em;
-	height: 2.1em;
+	height: 2.2em;
 	line-height: 2.2em;
 	overflow: hidden;
-	width: 2.1em;
+	width: 2.2em;
 	z-index: 2;
 }
 
@@ -149,7 +187,7 @@
 /* Efecto en el botón plus para cuando muestra el footer-mobile */
 .footer-mobil .footer-mobile-btn-plus-no-expand {
 	bottom: 60px;
-  box-shadow: 0 1px 10px rgba(70, 70, 70, 0.7);
+  box-shadow: 0 1px 10px #000000;
 	height: 1.5em;
 	line-height: 1.5em;
 	right: 0.5em;
@@ -183,10 +221,4 @@
 
 .footer-mobil .rotate-icon-plus {
   transform: rotateZ(-90deg);
-}
-
-/* Efecto para esconder el footer-mobile */
-.hide-footer-mobile {
-	transform: translateY(100px); /* En caso de que no se dejen se deja en el html por fuera de la sección */
-	transition: transform 1s ease-out;
 }

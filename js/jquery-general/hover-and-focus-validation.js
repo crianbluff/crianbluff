@@ -15,26 +15,31 @@ $(document).ready(function() {
 		$('#icon-close-footer-mobile').toggleClass('rotate-icon-plus');
 		$('#footer-mobil').toggleClass('hide-footer-mobile');
 		soundFooterMobil.play();
+
+		// Si le dan click al boton del footer mobile para cerrarlo se oculte el contenedor de la paleta de temas
+		if ( $('#footer-mobile-btn-plus-no-expand').hasClass('footer-mobile-btn-plus-expand') ) {
+			$('#ctn-paletts-colors-footer-mobil').removeClass('active');
+		}
 	});
 
 	// Validación si le dan click al icono de cambiar tema aparezca la burbuja con las paletas de colores que hay
 	$('#ctn-icon-palette-colors').on('click', function() {
-		$('#ctn-paletts-colors').toggleClass('fadeinup');
+		$('#ctn-paletts-colors').toggleClass('active');
 	});
 
 	// Validación si le dan click a las paletas de color se cierra la burbuja que las contiene
 	$('.paletts-colors').on('click', function() {
-		$(this).parent('#ctn-paletts-colors').removeClass('fadeinup');
+		$(this).parent('#ctn-paletts-colors').removeClass('active');
 	});
 
 	// Validación si le dan click al icono de cambiar tema en footer mobile aparezca la burbuja con las paletas de colores que hay
 	$('#icon-palette-colors-footer-mobil').on('click', function() {
-		$('#ctn-paletts-colors-footer-mobil').toggleClass('fadeinup');
+		$('#ctn-paletts-colors-footer-mobil').toggleClass('active');
 	});
 
 	// Validación si le dan click a las paletas de color se cierra la burbuja que las contiene footer-mobil
 	$('.paletts-colors-footer-mobil').on('click', function() {
-		$(this).parent('#ctn-paletts-colors-footer-mobil').removeClass('fadeinup');
+		$(this).parent('#ctn-paletts-colors-footer-mobil').removeClass('active');
 	});
 	
 	

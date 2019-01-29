@@ -37,7 +37,7 @@
 					</li>
 
 					<li>
-						<p class="lh-25 content-section-footer-pc" title="País y Ciudad Creador De La Web">
+						<p class="inline-block lh-25 content-section-footer-pc" title="País y Ciudad Creador De La Web">
 							<i class="fa fa-circle radius color-transparent icons-section-footer-pc icon-flag-colombia" aria-hidden="true"></i>
 							Colombia, Bogotá
 						</p>
@@ -142,47 +142,47 @@
 
 			<div class="col-md-3 col-sm-6 col-xs-12 col-footer-pc">
 				<h4 class="txt-upper-case title-section-footer-pc">
-					Compatibilidad De La Web
+					Compatibilidad
 				</h4>
 
 				<ul>
 					<li>
-						<p class="lh-25 content-section-footer-pc" title="Google Chrome">
+						<p class="inline-block lh-25 content-section-footer-pc" title="Google Chrome">
 							<i class="fa fa-chrome radius color-transparent after icons-section-footer-pc icon-chrome" aria-hidden="true"></i>
 							Google Chrome
 						</p>
 					</li>
 
 					<li>
-						<p class="lh-25 content-section-footer-pc" title="Safari">
+						<p class="inline-block lh-25 content-section-footer-pc" title="Safari">
 							<i class="fa fa-safari icons-section-footer-pc icon-safari" aria-hidden="true"></i>
 							Safari
 						</p>
 					</li>
 
 					<li>
-						<p class="lh-25 content-section-footer-pc" title="Mozilla Firefox">
+						<p class="inline-block lh-25 content-section-footer-pc" title="Mozilla Firefox">
 							<i class="fa fa-firefox icons-section-footer-pc icon-firefox" aria-hidden="true"></i>
 							Mozilla Firefox
 						</p>
 					</li>
 
 					<li>
-						<p class="lh-25 content-section-footer-pc" title="Opera">
+						<p class="inline-block lh-25 content-section-footer-pc" title="Opera">
 							<i class="fa fa-opera icons-section-footer-pc icon-opera" aria-hidden="true"></i>
 							Opera
 						</p>
 					</li>
 					
 					<li>
-						<p class="lh-25 content-section-footer-pc" title="Internet Explorer">
+						<p class="inline-block lh-25 content-section-footer-pc" title="Internet Explorer">
 							<i class="fa fa-internet-explorer icons-section-footer-pc icon-explorer" aria-hidden="true"></i>
 							Internet Explorer
 						</p>
 					</li>
 
 					<li>
-						<p class="lh-25 content-section-footer-pc" title="Internet Explorer Edge">
+						<p class="inline-block lh-25 content-section-footer-pc" title="Internet Explorer Edge">
 							<i class="fa fa-edge icons-section-footer-pc icon-edge" aria-hidden="true"></i>
 							Internet Explorer Edge
 						</p>
@@ -225,9 +225,17 @@
 
 							<!-- Paleta de colores -->
 							<div id="ctn-paletts-colors" class="flex-a absolute ctn-paletts-colors">
-								<span class="radius bgcolor-github link-modal pointer paletts-colors palette-color-dark" data-palette-color="oscuro" data-modal="#modal-themes"></span>
-								<span class="radius bgcolor-facebook link-modal pointer paletts-colors palette-color-night" data-palette-color="noche" data-modal="#modal-themes"></span>
-								<span class="radius bgcolor-white link-modal pointer paletts-colors palette-color-light" data-palette-color="dia" data-modal="#modal-themes"></span>
+								<button class="radius color-github txt-center link-modal paletts-colors palette-color-dark" data-palette-color="oscuro" data-modal="#modal-themes">
+									<i class="fa fa-tint" aria-hidden="true"></i>
+								</button>
+
+								<button class="radius color-linkedin txt-center link-modal paletts-colors palette-color-night" data-palette-color="noche" data-modal="#modal-themes">
+									<i class="fa fa-moon-o" aria-hidden="true"></i>
+								</button>
+								
+								<button class="radius icon-email txt-center link-modal paletts-colors palette-color-light" data-palette-color="dia" data-modal="#modal-themes">
+									<i class="fa fa-sun-o" aria-hidden="true"></i>
+								</button>
 							</div>
 						</ul>
 					</div>

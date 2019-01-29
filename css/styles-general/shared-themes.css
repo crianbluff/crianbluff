@@ -200,12 +200,13 @@
 /* Footer mobile web general */
 .theme-dark .footer-mobil,
 .theme-night .footer-mobil {
-	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 -1px 10px #555555;
 }
 
 /* Botón footer-mobile "+" web general */
 .theme-dark .footer-mobil .footer-mobile-btn-plus-no-expand,
 .theme-night .footer-mobil .footer-mobile-btn-plus-no-expand {
+	box-shadow: 0 0 0 2px #555555;
 	color: #ffffff;
 	text-shadow: 0 0 5px #000000;
 }
@@ -330,7 +331,7 @@
 /* Imágenes lenguajes, frameworks, cms y otras herramientas web quiénes somos */
 .theme-dark .img-development,
 .theme-night .img-development {
-	box-shadow: 0 0 10px #000000;
+	box-shadow: 0 0 10px #222222;
 }
 
 /* Tema oscuro y noche web soporte */

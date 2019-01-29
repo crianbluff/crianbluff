@@ -66,11 +66,15 @@
 		padding: 20px 0;
 	}
 
-	/* Validación desde jquery para que cuando esten llenando el formulario se oculte el footer del mobil y el botón de ir arriba */
-	.hide-footer-mobil,
+	/* Footer pc centrar contenido */
+	.footer-pc .col-footer-pc {
+		text-align: center;
+	}
+
+	/* Botón ir arriba */
 	.btn-go-to-up {
 		display: none;
-	}	
+	}
 }
 
 @media screen and (max-width: 794px) {
@@ -128,17 +132,7 @@
 	.modal .ctn-modal .modal-content .modal-body .ctn-list-modal .list-modal-whithout-title {
 		font-size: 14px;
 	}
-
-	/* Footer pc centrar contenido */
-	.footer-pc .col-footer-pc {
-		text-align: center;
-	}
-
-	/* Sección copy-right y redes sociales */
-	.ctn-content-footer {
-		float: none !important;
-	}
-
+	
 	.copyright-and-social .copyright-text {
 		text-align: center;
 	}
@@ -231,6 +225,7 @@
 	.modal .card-presentation .back-card-presentation .back-content-card-presentation .skills-creator-card-presentation {
 		line-height: 20px;
 	}
+	
 }
 
 /* Responsive min-width */
@@ -280,4 +275,5 @@
 	.footer-mobil .footer-mobile-btn-plus-expand {
 		bottom: 0.5em;
 	}
+	
 }

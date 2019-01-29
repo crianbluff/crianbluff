@@ -69,18 +69,31 @@ $(document).ready(function() {
 		}
 
 		else {
+			// Se oculte el contenedor de la paleta de temas
+			$('#ctn-paletts-colors-footer-mobil').removeClass('active');
 			// De lo contrario el botón de ir arriba se esconde
 			btnUp.addClass('hide-btn-go-to-up');
 			// De lo contrario se elimina la clase para que vuelva a desaparecer con el efecto de acostarse
 			footerMobil.removeClass('active-footer-mobil');
 		}
 
+		if ( location.href.indexOf('contacto') > -1 ) {
+			// Si el scroll se pasa antes de la imágen de contacto menos el tamaño de ella osea luego de que termina el formulario
+			if ( $(window).scrollTop() < $('.img-contact').offset().top - $('.img-contact').height() ) {
+				// Se oculte el contenedor de la paleta de temas
+				$('#ctn-paletts-colors-footer-mobil').removeClass('active');
+				$('#footer-mobil').removeClass('active-footer-mobil');
+			}
+		}
+
 		// Validación para cuando el scroll pase de la posición del footer normal
-		if ($(this).scrollTop() > footerPc) {
+		if ($(this).scrollTop() > footerPc ) {
+			// Se oculte el contenedor de la paleta de temas
+			$('#ctn-paletts-colors-footer-mobil').removeClass('active');
 			// Si esta en el footer se elimina la clase para que vuelva a desaparecer con el efecto de acostarse el footer-mobil
 			footerMobil.removeClass('active-footer-mobil');
 		}
-
+		
 		// Validación para si el menu es el negro el reconocimiento del active sea distinto
 		// Y se agregue una clase o se quite para por cascada cambiar el efecto de hover a los links del menu		
 		if ($('#header').hasClass('menu-flex-no-slider')) {

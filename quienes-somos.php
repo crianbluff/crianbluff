@@ -72,37 +72,37 @@
 							Manejamos a la perfección los siguientes lenguajes.
 						</p>
 				
-						<div class="col-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="col-4 col-md-4 col-sm-4 col-xs-4">
 							<a href="https://www.w3schools.com/html" target="_blank" class="inline-block ctn-img-development" title="Html 5">
 								<img src="imgs/imgs-about-us/languages/html-5/html-5.png" class="img-development" alt="Html 5">
 							</a>
 						</div>
 				
-						<div class="col-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="col-4 col-md-4 col-sm-4 col-xs-4">
 							<a href="https://www.w3schools.com/css" target="_blank" class="inline-block ctn-img-development" title="Css 3">
 								<img src="imgs/imgs-about-us/languages/css-3/css-3.png" class="img-development" alt="Css 3">
 							</a>
 						</div>
 				
-						<div class="col-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="col-4 col-md-4 col-sm-4 col-xs-4">
 							<a href="https://www.javascript.com" target="_blank" class="inline-block ctn-img-development" title="Javascript">
 								<img src="imgs/imgs-about-us/languages/js/js.png" class="img-development" alt="Javascript">
 							</a>
 						</div>
 				
-						<div class="col-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="col-4 col-md-4 col-sm-4 col-xs-4">
 							<a href="https://www.mysql.com" target="_blank" class="inline-block ctn-img-development" title="Mysql">
 								<img src="imgs/imgs-about-us/languages/mysql/mysql.png" class="img-development" alt="Mysql">
 							</a>
 						</div>
 				
-						<div class="col-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="col-4 col-md-4 col-sm-4 col-xs-4">
 							<a href="http://php.net" target="_blank" class="inline-block ctn-img-development" title="Php">
 								<img src="imgs/imgs-about-us/languages/php/php.png" class="img-development" alt="Php">
 							</a>
 						</div>
 				
-						<div class="col-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="col-4 col-md-4 col-sm-4 col-xs-4">
 							<a href="https://www.java.com/es/download" target="_blank" class="inline-block ctn-img-development" title="Java">
 								<img src="imgs/imgs-about-us/languages/java/java.png" class="img-development" alt="Java">
 							</a>
@@ -211,37 +211,37 @@
 							También utilizamos los siguientes sistemas operativos y herramientas para desarrollar.
 						</p>
 				
-						<div class="col-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="col-4 col-md-4 col-sm-4 col-xs-4">
 							<a href="https://www.linux.com" target="_blank" class="inline-block ctn-img-development" title="Linux">
 								<img src="imgs/imgs-about-us/tools-developer/linux/linux.png" class="img-development" alt="Linux">
 							</a>
 						</div>
 
-						<div class="col-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="col-4 col-md-4 col-sm-4 col-xs-4">
 							<a href="https://www.microsoft.com/windows" target="_blank" class="inline-block ctn-img-development" title="Windows">
 								<img src="imgs/imgs-about-us/tools-developer/windows/windows.png" class="img-development" alt="Windows">
 							</a>
 						</div>
 
-						<div class="col-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="col-4 col-md-4 col-sm-4 col-xs-4">
 							<a href="https://www.sublimetext.com" target="_blank" class="inline-block ctn-img-development" title="Sublime Text 3">
 								<img src="imgs/imgs-about-us/tools-developer/sublime-text-3/sublime-text-3.png" class="img-development" alt="Sublime Text 3">
 							</a>
 						</div>
 
-						<div class="col-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="col-4 col-md-4 col-sm-4 col-xs-4">
 							<a href="https://nodejs.org/es/" target="_blank" class="inline-block ctn-img-development" title="Node Js">
 								<img src="imgs/imgs-about-us/tools-developer/node-js/node-js.png" class="img-development" alt="Node Js">
 							</a>
 						</div>
 
-						<div class="col-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="col-4 col-md-4 col-sm-4 col-xs-4">
 							<a href="https://github.com" target="_blank" class="inline-block ctn-img-development" title="Github">
 								<img src="imgs/imgs-about-us/tools-developer/github/github.png" class="img-development" alt="Github">
 							</a>
 						</div>
 
-						<div class="col-2 col-md-2 col-sm-2 col-xs-2">
+						<div class="col-4 col-md-4 col-sm-4 col-xs-4">
 							<a href="http://sass-lang.com" target="_blank" class="inline-block ctn-img-development" title="Sass">
 								<img src="imgs/imgs-about-us/tools-developer/sass/sass.png" class="img-development" alt="Sass">	
 							</a>

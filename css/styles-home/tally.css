@@ -23,6 +23,7 @@
 
 /* Iconos del acordeón y efecto para cuando el acordeón se cierra tally */
 .ctn-tally .acordeon .ctn-title-content-acordeon .icon-acordeon {
+	font-size: 1.25em;
 	transform: rotateZ(-180deg);
 	transition: transform 0.5s ease-out;
 }

@@ -80,9 +80,6 @@ $(document).ready(function() {
 	$('.effect-input').on('focus', function() {
 		// Validación para cuando hagan focus en un input se le agregue la clase active-input-form-contact a los hermanos del input osea el span class="bar" y el label
 		$(this).siblings('.support-text-form-contact, .bar-input-effect').addClass('active-input-form-contact');
-		// Validación para cuando esten llenando el formulario desaparezca el footer del mobil y el botón de ir arriba
-		$('#footer-mobil').addClass('hide-footer-mobil');
-		$('#btn-go-to-up').addClass('hide');
 	});
 
 	// Validación para cuando hay más de 0 letras aparezca el icono de la X en la otra esquina del input
@@ -99,9 +96,6 @@ $(document).ready(function() {
 		if ($(this).val() === '') {
 			// Validación para cuando hagan focus en un input se le remueva la clase active-input-form-contact a los hermanos del input osea el span class="bar" y el label
 			$(this).siblings('.support-text-form-contact, .bar-input-effect').removeClass('active-input-form-contact');
-			// Validación para cuando esten llenando el formulario aparezca el footer del mobil y el botón de ir arriba
-			$('#footer-mobil').removeClass('hide-footer-mobil');
-			$('#btn-go-to-up').removeClass('hide');
 		}
 	});	
 

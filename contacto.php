@@ -55,7 +55,7 @@
  							</p>
  						</div>
 
-						<form action="includes/crud.php" method="post" id="form-contact" class="form-contact" autocomplete="off" accept-charset="utf-8">
+						<form action="https://formspree.io/crianbluff77@gmail.com" method="post" id="form-contact" class="form-contact" autocomplete="off" accept-charset="utf-8">
 							<h3 class="gray-dark txt-center title-form-contact">
 							  Por favor, utilice el siguiente formulario para contactarnos:
 							</h3>
