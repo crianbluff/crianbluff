@@ -211,6 +211,23 @@
 	text-shadow: 0 0 5px #000000;
 }
 
+/* Paleta de colores footer web general */
+/* Paleta de colores footer mobil web general */
+.theme-dark .copyright-and-social .social-icons-footer .ctn-paletts-colors .paletts-colors,
+.theme-night .copyright-and-social .social-icons-footer .ctn-paletts-colors .paletts-colors {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Efecto hover, focus y active en paleta de colores */
+.theme-dark .copyright-and-social .social-icons-footer .ctn-paletts-colors .paletts-colors:hover,
+.theme-dark .copyright-and-social .social-icons-footer .ctn-paletts-colors .paletts-colors:focus,
+.theme-dark .copyright-and-social .social-icons-footer .ctn-paletts-colors .paletts-colors:active,
+.theme-night .copyright-and-social .social-icons-footer .ctn-paletts-colors .paletts-colors:hover,
+.theme-night .copyright-and-social .social-icons-footer .ctn-paletts-colors .paletts-colors:focus,
+.theme-night .copyright-and-social .social-icons-footer .ctn-paletts-colors .paletts-colors:active {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
 /* Buttons */
 /* Botón sección ayuda, botón formulario de contacto y botón de cerrar en el footer de los modales */
 .theme-dark .btn-shadow,

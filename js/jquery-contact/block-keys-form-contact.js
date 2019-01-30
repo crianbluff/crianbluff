@@ -125,7 +125,7 @@ $(document).ready(function() {
 	});
 
 	// Validación cuando le dan click al botón de enviar formulario de contacto le agruegue la clase shake a los mensajes de error 
-	$('#send_form_contact').on('submit click', function(e) {
+	$('#form-contact').on('submit', function(e) {
 		e.preventDefault();
 		$('.error-input-form-contact').addClass('shake');
 		

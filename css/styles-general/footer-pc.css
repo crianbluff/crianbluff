@@ -249,9 +249,10 @@
 
 /* Paleta de colores */
 .copyright-and-social .social-icons-footer .ctn-paletts-colors .paletts-colors {
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(173, 168, 168, 0.15);
   box-shadow: 0 0 1px #000000;
 	height: 1.5em;
+	text-shadow: 0 0 20px;
 	transition: background-color 0.3s ease-out;
   width: 1.5em;
 }
@@ -260,7 +261,7 @@
 .copyright-and-social .social-icons-footer .ctn-paletts-colors .paletts-colors:hover,
 .copyright-and-social .social-icons-footer .ctn-paletts-colors .paletts-colors:focus,
 .copyright-and-social .social-icons-footer .ctn-paletts-colors .paletts-colors:active {
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(55, 55, 55, 0.3);
 }
 
 /* Iconos paleta de colores */

@@ -41,16 +41,8 @@ $(document).ready(function() {
 
 	// Escribir la función para moverse
 	function moveSlider() {
-		if (i == 0) {
-			containerInner.css({
-				'left': `${ 0 }%`
-			});
-		} 
-		else if (i > 0) {
-			containerInner.css({
-				'left': `-${ 100 * i }%`
-			});
-		}
+		i == 0 ? containerInner.css({ 'left': `${ 0 }%` }) : '';
+		i > 0 ? containerInner.css({ 'left': `-${ 100 * i }%` }) : '';
 	}
 
 	// Validación para moverse a la siguiente imágen
@@ -72,14 +64,10 @@ $(document).ready(function() {
 	// Ejecuta el slider automáticamente
 	let autoSlider = setInterval(function moveAutoSlider() {
 		// Si el menú esta de color negro o el slider tiene la clase stop-slider no sigue el slider en automático
-		if ($('#slider').hasClass('stop-slider')) {
-			clearInterval(autoSlider);
-		}
+		$('#slider').hasClass('stop-slider') ? clearInterval(autoSlider) : '';
 
 		// En caso de que este posicionado en la 1ra imágen del slider se ejecuta automáticamente cada 5 segundos
-		else if (i < sectionLength -1) {
-			moveSlider(i++);
-		}
+		i < sectionLength -1 ? moveSlider(i++) : '';
 	}, 5000);
 
 	// Validación para cuando le den click al botón de la hamburguesa, los links del menu, al logo del menú, las flechas del slider y la flecha de la siguiente sección

@@ -47,8 +47,9 @@
 
 /* Titulos slider */
 .ctn-slider .slider .section-slider .title-slider {
-	font: normal 4em 'dancing-script', sans-serif;
+	font: normal 4.75em 'dancing-script', sans-serif;
 	text-shadow: 1px 1px 10px #000000;
+	width: 77%;
 }
 
 .ctn-slider .slider-nav {

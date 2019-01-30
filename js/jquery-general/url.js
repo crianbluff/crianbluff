@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	// La variable "urlHome" significa la url del inicio de la página web
-	const urlHome = 'https://crianbluff.github.io/crianbluff';
+	const urlHome = 'https://crianbluff.github.io/crianbluff/';
 
 	// La variable time significa para calcular el tiempo en las condicionales de agregar o quitar las hojas de estilo del tema oscuro
 	let time = new Date();
@@ -101,7 +101,7 @@ $(document).ready(function() {
 	});
 
 	// Linkeado para compartir en redes sociales la url en la que se encuentran, la variable "urlThis" significa, la url en la que se encuentra
-	const urlThis = location.pathname;
+	const urlThis = location.href;
 
 	// Linkeado a compartir la url en la que se encuentra en facebook
 	$('#share-facebook').on('click', function() {

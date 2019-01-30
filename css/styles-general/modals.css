@@ -114,6 +114,7 @@
 	perspective: 1000px;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	width: 90%;
 }
 
 /* Parte Frontal y trasera de la tarjeta */

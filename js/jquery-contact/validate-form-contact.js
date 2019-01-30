@@ -92,10 +92,10 @@ $(document).ready(function () {
 		errorCampoCorreo.text(msnCampos[1].concat(msnEmailInvalid));
 
 		// Validación para cuando no lleva números
-		if(isNaN(formContactTelefono))
+		if (isNaN(formContactTelefono))
 		errorCampoTelefono.text(msnCampos[2].concat(msnNumInvalid));
 
-		if(isNaN(formContactExtension))
+		if (isNaN(formContactExtension))
 		errorCampoExtension.text(msnCampos[3].concat(msnNumInvalid));
 	});
 

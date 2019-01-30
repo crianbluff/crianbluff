@@ -17,9 +17,7 @@ $(document).ready(function() {
 		soundFooterMobil.play();
 
 		// Si le dan click al boton del footer mobile para cerrarlo se oculte el contenedor de la paleta de temas
-		if ( $('#footer-mobile-btn-plus-no-expand').hasClass('footer-mobile-btn-plus-expand') ) {
-			$('#ctn-paletts-colors-footer-mobil').removeClass('active');
-		}
+		$('#footer-mobile-btn-plus-no-expand').hasClass('footer-mobile-btn-plus-expand') ? $('#ctn-paletts-colors-footer-mobil').removeClass('active') : '';
 	});
 
 	// Validación si le dan click al icono de cambiar tema aparezca la burbuja con las paletas de colores que hay
@@ -50,18 +48,9 @@ $(document).ready(function() {
 			localStorage.removeItem(theme);
 		}
 
-		if ($('.theme-selected').attr('data-palette-color') == 'noche') {
-			localStorage.setItem(themes[0], true);
-		}
-		
-		if ($('.theme-selected').attr('data-palette-color') == 'oscuro') {
-			localStorage.setItem(themes[1], true);
-		}
-		
-		if ($('.theme-selected').attr('data-palette-color') == 'dia') {
-			localStorage.setItem(themes[2], true);
-		}
-
+		$('.theme-selected').attr('data-palette-color') == 'noche' ? localStorage.setItem(themes[0], true) : '';		
+		$('.theme-selected').attr('data-palette-color') == 'oscuro' ? localStorage.setItem(themes[1], true) : '';		
+		$('.theme-selected').attr('data-palette-color') == 'dia' ? localStorage.setItem(themes[2], true) : '';
 	});
 	
 	// Condicional si la key del tema noche se encuentra en valor 'true', se agrega la clase 'theme-night' en el body

@@ -39,10 +39,9 @@ $(document).ready(function() {
 		else {
 			menu.addClass('scroll-down');
 			// Si hace scroll hacia abajo y el menu esta abierto simula un click en el botón del menú para que este se cierre
-			if ($('#enlaces').hasClass('active')) {
-				$('#btn-menu').trigger('click');
-			}
+			$('#enlaces').hasClass('active') ?	$('#btn-menu').trigger('click') : '';
 		}
+
     scrollZero = positionScrollY;
     // Validación para que cuando el scroll este en la posicion 0 osea arriba se remueva la clase scroll-down para que así cargue bien la animacion del header
     positionScrollY == 0 ? menu.removeClass('scroll-down') : '';
@@ -50,14 +49,9 @@ $(document).ready(function() {
 
 	win.on('load scroll resize', function() {
 		// Validación para que cuando el usuario haga scroll valide si pasa de cierta posicion en este caso la posición es la variable "winH" = 100vh / 2.5
-		if ($(this).scrollTop() > winH / 2.5) {
-			// Si el scroll pasa de "winH" se le agrega una clase al header para cambiarle el bakcground
-			menu.addClass('menu-flex-no-slider');
-		}
-		else {
-			// De lo contrario se elimina la clase para que vuelva al background que tenía
-			menu.removeClass('menu-flex-no-slider');
-		}
+		// Si el scroll pasa de "winH" se le agrega una clase al header para cambiarle el bakckground
+		// De lo contrario se elimina la clase para que vuelva al background que tenía
+		$(this).scrollTop() > winH / 2.5 ? menu.addClass('menu-flex-no-slider') : menu.removeClass('menu-flex-no-slider');
 	});
 
 	win.on('load scroll resize', function() {
