@@ -93,7 +93,9 @@
 	line-height: 3em;
 	right: 0.5em;
 	transition: background-color 0.5s ease,
-							transform 0.3s ease;
+							transform 0.3s ease,
+							visibility 0.5s ease;
+	visibility: visible;
 	width: 3em;
 	z-index: 500;
 }
@@ -113,4 +115,5 @@
 /* Efecto para cuando se oculte el botón de ir arriba o se muestre mediante una validación de jquery */
 .hide-btn-go-to-up {
 	transform: translate3d(10vw, 0, 0);
+	visibility: hidden;
 }

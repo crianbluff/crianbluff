@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
 	const sectionServices = $('#section-services').offset().top,
-	    ctnWelcome = $('#ctn-welcome').offset().top,
-	    linkMenuHome = $('#menu-link-home'),
-	    linkMenuServices =  $('#menu-link-services');
+				ctnWelcome = $('#ctn-welcome').offset().top,
+				linkMenuHome = $('#menu-link-home'),
+				linkMenuServices =  $('#menu-link-services');
 
 	$(window).on('load scroll resize', function () {
 		// Validación para que dependiendo la posición del scroll, el link de servicios se active y el de home se desactive y viceversa si no se cumple

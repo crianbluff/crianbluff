@@ -25,21 +25,11 @@ $(document).ready(function() {
 
 	// Validación en caso de que sean las 18:00 pm hasta las 05:59 am se agrega la clase 'theme-night' en el body
 	// Si es mayor o igual a 18 osea 06:00 pm se agrega la clase 'theme-night' en el body
-	if (time.getHours() >= 18) {
-		$('body').addClass('theme-night');
-	}
-
-	// Si son las 06:00 am hasta las 17:59 se remueve la clase 'theme-night' del body
 	// Si es mayor o igual a 6 osea 06:00 am se remueve la clase 'theme-night' del body
-	else if (time.getHours() >= 6) {
-		$('body').removeClass('theme-night');
-	}
-
+	// Si son las 06:00 am hasta las 17:59 se remueve la clase 'theme-night' del body
 	// De lo contrario que no se cumpla ninguna de las anteriores condiciones se agrega la clase 'theme-night' en el body
 	// Ya que seria para el rango de horas 01:00 am hasta las 05:00 am que son las horas que no estan cogiendo las condiciones anteriores
-	else {
-		$('body').addClass('theme-night');
-	}
+	time.getHours() >= 18 || time.getHours() <= 5 ? $('body').addClass('theme-night') : $('body').removeClass('theme-night');
 
 	// Recorre todas las etiquetas 'a' que vayan dentro del menú y las que coincidan con el href con la url le grega una clase para que resalte
 	$('#enlaces a').each(function() {

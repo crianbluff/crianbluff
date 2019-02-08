@@ -42,24 +42,29 @@ $(document).ready(function() {
 	
 	
 	$('#accept-theme').on('click', function() {
-		let themes = ['themeNight', 'themeDark', 'themeLight'];
-
-		for ( theme of themes ) {
-			localStorage.removeItem(theme);
+		// Detecta si existe el objeto localstorage
+		if ( typeof(Storage) !== 'undefined' ) {
+			let themes = ['themeNight', 'themeDark', 'themeLight'];
+			
+			for ( theme of themes ) {
+				localStorage.removeItem(theme);
+			}
+			
+			$('.theme-selected').attr('data-palette-color') == 'noche' ? localStorage.setItem(themes[0], true) : '';		
+			$('.theme-selected').attr('data-palette-color') == 'oscuro' ? localStorage.setItem(themes[1], true) : '';		
+			$('.theme-selected').attr('data-palette-color') == 'dia' ? localStorage.setItem(themes[2], true) : '';
 		}
-
-		$('.theme-selected').attr('data-palette-color') == 'noche' ? localStorage.setItem(themes[0], true) : '';		
-		$('.theme-selected').attr('data-palette-color') == 'oscuro' ? localStorage.setItem(themes[1], true) : '';		
-		$('.theme-selected').attr('data-palette-color') == 'dia' ? localStorage.setItem(themes[2], true) : '';
 	});
 	
 	// Condicional si la key del tema noche se encuentra en valor 'true', se agrega la clase 'theme-night' en el body
 	// Y se remueve la clase 'theme-dark'
-	localStorage.getItem('themeNight') == 'true' ? $('body').removeClass('theme-dark').addClass('theme-night') : '';
-	// Condicional si la key del tema oscuro se encuentra en valor 'true', se agrega la clase 'theme-dark' en el body
-	// Y se remueve la clase 'theme-night'
-	localStorage.getItem('themeDark') == 'true' ? $('body').removeClass('theme-night').addClass('theme-dark') : '';
-	// Condicional si la key del tema día se encuentra en valor 'true', se remueven las clases 'theme-night y theme-dark' del body
-	localStorage.getItem('themeLight') == 'true' ? $('body').removeClass('theme-night theme-dark') : '';
+	if ( typeof(Storage) !== 'undefined' ) {
+		localStorage.getItem('themeNight') == 'true' ? $('body').removeClass('theme-dark').addClass('theme-night') : '';
+		// Condicional si la key del tema oscuro se encuentra en valor 'true', se agrega la clase 'theme-dark' en el body
+		// Y se remueve la clase 'theme-night'
+		localStorage.getItem('themeDark') == 'true' ? $('body').removeClass('theme-night').addClass('theme-dark') : '';
+		// Condicional si la key del tema día se encuentra en valor 'true', se remueven las clases 'theme-night y theme-dark' del body
+		localStorage.getItem('themeLight') == 'true' ? $('body').removeClass('theme-night theme-dark') : '';
+	}
 
 });

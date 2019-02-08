@@ -7,7 +7,9 @@
 	overflow-y: auto;
 	transform: scale(0) translate3d(0, -1000px, 0);
 	transition: opacity 1s ease,
-	            transform 1s ease;            
+							transform 1s ease,
+							visibility 1s ease;
+	visibility: hidden;
 	z-index: 800;
 }
 
@@ -26,6 +28,7 @@
 .show-modal {
 	opacity: 1;
 	transform: scale(1) translate3d(0, 0, 0);
+	visibility: visible;
 }
 
 .modal .ctn-modal {
@@ -40,6 +43,7 @@
 
 /* Encabezados de los modales */
 .modal .ctn-modal .modal-content .modal-header {
+	align-items: center;
 	box-shadow: 0 0 0 1px #dcdcdc;
 	justify-content: space-between;
 	padding: 1em;
@@ -55,6 +59,7 @@
 	color: #909090;
 	font-size: 20px;
 	height: 20px;
+	line-height: 20px;
 	transition: color 0.2s ease;
 	width: 20px;
 }
@@ -132,7 +137,7 @@
   box-shadow: 0 0 20px #ffffff inset,
               0 0 3px #ffffff;
 	overflow: hidden;
-	transform: rotateY(0deg);
+	transform: rotateY(0);
 }
 
 /* Botón de cerrar tarjeta tanto para la parte trasera como la parte delantera */

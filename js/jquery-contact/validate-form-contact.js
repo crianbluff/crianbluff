@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 	// Validación del botón enviar del formulario de contacto
-	$('#send_form_contact').on('submit click', function() {
+	$('#send_form_contact').on('click', function() {
 		// La variable expr es para validar el formulario que solo reciba estos caracteres
 		const expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
 		const letras = 'áéíóúabcdefghijklmnñopqrstuvwxyzÁÉÍÓÚABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
@@ -40,70 +40,70 @@ $(document).ready(function () {
 
 		// Validaciones para cuando el campo esta vacío o si es demasiado corto
 		if (formContactNombres === '')
-		errorCampoNombres.text(msnCampos[0].concat(msnVacio));
+		errorCampoNombres.text(`${ msnCampos[0] } ${ msnVacio }`);
 
 		else if (formContactNombres.length < 2)
-		errorCampoNombres.text(msnCampos[0].concat(msnMinlength));
+		errorCampoNombres.text(`${ msnCampos[0] } ${ msnMinlength }`);
 
 		if (formContactCorreo === '')
-		errorCampoCorreo.text(msnCampos[1].concat(msnVacio));
+		errorCampoCorreo.text(`${ msnCampos[1] } ${ msnVacio }`);
 
 		else if (formContactCorreo.length < 6)
-		errorCampoCorreo.text(msnCampos[1].concat(msnMinlength));
+		errorCampoCorreo.text(`${ msnCampos[1] } ${ msnMinlength }`);
 		
 		if (formContactTelefono.length < 7)
-		errorCampoTelefono.text(msnCampos[2].concat(msnMinlength));
+		errorCampoTelefono.text(`${ msnCampos[2] } ${ msnMinlength }`);
 
 		if (formContactMensaje === '')
-		errorCampoMensaje.text(msnCampos[4].concat(msnVacio));
+		errorCampoMensaje.text(`${ msnCampos[4] } ${ msnVacio }`);
 
 		else if (formContactMensaje.length < 50)
-		errorCampoMensaje.text(msnCampos[4].concat(msnMinlength));
+		errorCampoMensaje.text(`${ msnCampos[4] } ${ msnMinlength }`);
 
 		// Validación para cuando el número es demasiado corto
 		if (formContactTelefono < 2000000)
-		errorCampoTelefono.text(msnCampos[2].concat(msnMin));
+		errorCampoTelefono.text(`${ msnCampos[2] } ${ msnMin }`);
 
 		// Validaciones para cuando el campo es demasiado largo
 		if (formContactNombres.length > 100)
-		errorCampoNombres.text(msnCampos[0].concat(msnMaxlength));
+		errorCampoNombres.text(`${ msnCampos[0] } ${ msnMaxlength }`);
 
 		if (formContactCorreo.length > 92)
-		errorCampoCorreo.text(msnCampos[1].concat(msnMaxlength));
+		errorCampoCorreo.text(`${ msnCampos[1] } ${ msnMaxlength }`);
 
 		if (formContactTelefono.length > 11)
-		errorCampoTelefono.text(msnCampos[2].concat(msnMaxlength));
+		errorCampoTelefono.text(`${ msnCampos[2] } ${ msnMaxlength }`);
 
 		if (formContactExtension.length > 10)
-		errorCampoExtension.text(msnCampos[3].concat(msnMaxlength));
+		errorCampoExtension.text(`${ msnCampos[3] } ${ msnMaxlength }`);
 
 		if (formContactMensaje.length > 400)
-		errorCampoMensaje.text(msnCampos[4].concat(msnMaxlength));
+		errorCampoMensaje.text(`${ msnCampos[4] } ${ msnMaxlength }`);
 
 		// Validación para cuando el número es demasiado largo
 		if (formContactTelefono > 35000000000)
-		errorCampoTelefono.text(msnCampos[2].concat(msnMax));
+		errorCampoTelefono.text(`${ msnCampos[2] } ${ msnMax }`);
 
 		if (formContactExtension > 9999999999)
-		errorCampoExtension.text(msnCampos[3].concat(msnMax));
+		errorCampoExtension.text(`${ msnCampos[3] } ${ msnMax }`);
 
 		// Validación para cuando no es un correo valido
 		if (!expr.test(formContactCorreo))
-		errorCampoCorreo.text(msnCampos[1].concat(msnEmailInvalid));
+		errorCampoCorreo.text(`${ msnCampos[1] } ${ msnEmailInvalid }`);
 
 		// Validación para cuando no lleva números
 		if (isNaN(formContactTelefono))
-		errorCampoTelefono.text(msnCampos[2].concat(msnNumInvalid));
+		errorCampoTelefono.text(`${ msnCampos[2] } ${ msnNumInvalid }`);
 
 		if (isNaN(formContactExtension))
-		errorCampoExtension.text(msnCampos[3].concat(msnNumInvalid));
+		errorCampoExtension.text(`${ msnCampos[3] } ${ msnNumInvalid }`);
 	});
 
 	// Validación para cuando le den click a la "x" del mensaje correcto del formualario de contacto se desvanezca el mensaje
 	// Y se elimine el mensaje 2 milisegundos después de que se desvanezca
 	$('#btn-close-form-correct').on('click', function() {
 		$(this).parent('.ctn-title-btn-close-form-correct').parent('.form-correct').fadeOut(500);
-		$(this).parent('.ctn-title-btn-close-form-correct').parent('.form-correct').delay(700).queue(function() {
+		$(this).parent('.ctn-title-btn-close-form-correct').parent('.form-correct').on('transitionend', function() {
 			$(this).remove();
 		});
 	});

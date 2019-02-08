@@ -36,6 +36,7 @@
 /* Contenedor título y botón de cerrar mensaje de formulario contacto */
 .form-correct .ctn-title-btn-close-form-correct {
 	justify-content: space-between;
+	margin-bottom: 10px;
 }
 
 /* Título mensaje de formulario correcto */
@@ -43,16 +44,16 @@
 	color: #0a9e00;
 	font-size: 1em;
 	letter-spacing: 0.5px;
-	margin-bottom: 10px;
 }
 
 /* Botón de cerrar mensaje de formulario correcto */
 .form-correct .ctn-title-btn-close-form-correct .btn-close-form-correct {
 	color: #83c53d;
-	font-size: 14px;
-	height: 14px;
+	font-size: 20px;
+	height: 20px;
+	line-height: 20px;
+	width: 20px;
 	transition: color 0.3s ease-out;
-	width: 14px;
 }
 
 .form-correct .ctn-title-btn-close-form-correct .btn-close-form-correct:hover,

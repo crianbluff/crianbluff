@@ -33,7 +33,7 @@
 						<!-- Caja correcta se lleno todo de manera correcta -->
  						<div class="form-correct">
  							<div class="flex one-hundred-porcent ctn-title-btn-close-form-correct">
- 								<h3 class="title-form-correct">
+ 								<h3 class="txt-center title-form-correct">
  									Correo Enviado Satisfactoriamente!
  								</h3>
 

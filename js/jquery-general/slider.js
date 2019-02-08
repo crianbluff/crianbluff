@@ -14,11 +14,11 @@ $(document).ready(function() {
 
 	// Definir el ancho del contenedor interno
 	containerInner.css({
-		'width': `${100 * sectionLength}%`
+		'width': `${ 100 * sectionLength }%`
 	});
 
 	sectionSlider.css({
-		'width': `${100 / sectionLength}%`
+		'width': `${ 100 / sectionLength }%`
 	});
 
 	// Crear botones para avanzar y retroceder
@@ -32,31 +32,28 @@ $(document).ready(function() {
 	// Envolver los botones
 	next.add(prev).wrapAll('<div class="slider-nav" />');
 
-	/*
-		Crear la función para navegar entre los slides
-	*/
-
+	/* Crear la función para navegar entre los slides */
 	// Indice para moverse entre los slides
-	let i = 0;
+	let indexSlider = 0;
 
 	// Escribir la función para moverse
 	function moveSlider() {
-		i == 0 ? containerInner.css({ 'left': `${ 0 }%` }) : '';
-		i > 0 ? containerInner.css({ 'left': `-${ 100 * i }%` }) : '';
+		indexSlider == 0 ? containerInner.css({ 'left': `${ 0 }%` }) : '';
+		indexSlider > 0 ? containerInner.css({ 'left': `-${ 100 * indexSlider }%` }) : '';
 	}
 
 	// Validación para moverse a la siguiente imágen
 	next.on('click', function moveNextSlider() {
-		if (i < sectionLength - 1) {
-			i++;
+		if (indexSlider < sectionLength - 1) {
+			indexSlider++;
 			moveSlider();
 		}
 	});
 
 	// Validación para moverse a la anterior imágen
 	prev.on('click', function movePrevSlider() {
-		if (i > 0) {
-			i--;
+		if (indexSlider > 0) {
+			indexSlider--;
 			moveSlider();
 		}
 	});
@@ -67,7 +64,7 @@ $(document).ready(function() {
 		$('#slider').hasClass('stop-slider') ? clearInterval(autoSlider) : '';
 
 		// En caso de que este posicionado en la 1ra imágen del slider se ejecuta automáticamente cada 5 segundos
-		i < sectionLength -1 ? moveSlider(i++) : '';
+		indexSlider < sectionLength -1 ? moveSlider(indexSlider++) : '';
 	}, 5000);
 
 	// Validación para cuando le den click al botón de la hamburguesa, los links del menu, al logo del menú, las flechas del slider y la flecha de la siguiente sección

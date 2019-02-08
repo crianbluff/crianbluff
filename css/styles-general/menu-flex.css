@@ -5,13 +5,16 @@
 	left: 0;
 	top: 0;
 	transition: background-color 0.5s ease-out,
-							transform 0.5s ease;
+							transform 0.5s ease,
+							visibility 0.5s ease;
+	visibility: visible;
 	z-index: 700;
 }
 
 /* Efecto del menú dependiendo la dirección del scroll, validación mediante jquery */
 .scroll-down {
 	transform: translateY(-100%);
+	visibility: hidden;
 }
 
 /* Validación para cuando el scroll esta posicionado fuera de la frase del slider */

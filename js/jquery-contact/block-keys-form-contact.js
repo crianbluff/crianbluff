@@ -31,11 +31,7 @@ $(document).ready(function() {
 	$('input[type="text"], input[type="email"], input[type="num"], input[type="tel"], textarea').on('keydown keyup', function(e) {
     
     // Validación para en caso de que los campos del formulario de contacto esten vacios no pueda teclear el espacio, el this es para cada uno
-		if ($(this).val() === '') {
-			if (e.keyCode == 32) {
-				e.preventDefault();
-			}
-		}   
+		$(this).val() === ''&& e.keyCode == 32 ? e.preventDefault() : '';
 
 		// Bloquea el shift
 		if (e.shiftKey || e.keyCode == 93)
@@ -93,10 +89,8 @@ $(document).ready(function() {
 	$('.effect-input').on('focusout', function() {
 	  // Se agregue la clase validate-input para que mediante por css se hace por cascada los estilos cuando este correcto o incorrecto
 	  $(this).addClass('validate-input');
-		if ($(this).val() === '') {
-			// Validación para cuando hagan focus en un input se le remueva la clase active-input-form-contact a los hermanos del input osea el span class="bar" y el label
-			$(this).siblings('.support-text-form-contact, .bar-input-effect').removeClass('active-input-form-contact');
-		}
+		// Validación para cuando hagan focus en un input se le remueva la clase active-input-form-contact a los hermanos del input osea el span class="bar" y el label
+		$(this).val() === '' ? $(this).siblings('.support-text-form-contact, .bar-input-effect').removeClass('active-input-form-contact') : '';
 	});	
 
 	// Validación cuando le dan click al icono de la X en el formulario de contacto vacía el input en el que esta
@@ -125,14 +119,14 @@ $(document).ready(function() {
 	});
 
 	// Validación cuando le dan click al botón de enviar formulario de contacto le agruegue la clase shake a los mensajes de error 
-	$('#form-contact').on('submit', function(e) {
+	$('#send_form_contact').on('click', function(e) {
 		e.preventDefault();
 		$('.error-input-form-contact').addClass('shake');
 		
 		// Validacion para cuando se termine la animación se remueva la clase shake y aspi puede ser infinito
-		setTimeout(function() {
+		$('.error-input-form-contact').on('animationend', function() {
 			$('.error-input-form-contact').hasClass('shake') ? $('.error-input-form-contact').removeClass('shake') : '';
-		}, 1000);
+		});
 	});
 
 });

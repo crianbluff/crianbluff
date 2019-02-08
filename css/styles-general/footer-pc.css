@@ -93,32 +93,32 @@
 	background-image: linear-gradient(
 			                240deg,
 			                rgba(0, 0, 0, 0) 66.4%,
-			                #009c59 0%
+			                #009c59 0
 			              ),
 		                linear-gradient(
-		                  0deg,
+		                  0,
 		                  rgba(0, 0, 0, 0) 71.5%,
-		                  #e34a35 0%
+		                  #e34a35 0
 		                ),
 		                linear-gradient(
 			                290deg,
 			                rgba(0, 0, 0, 0) 60%,
-			                #e34a35 0%
+			                #e34a35 0
 		                ),
 		                linear-gradient(
 		                  120deg,
 		                  rgba(0, 0, 0, 0) 66%,
-		                  #ffca38 0%
+		                  #ffca38 0
 		                ),
 		                linear-gradient(
 			                57deg,
 			                rgba(0, 0, 0, 0) 58%,
-			                #ffca38 0%
+			                #ffca38 0
 		                ),
 		                linear-gradient(
 		                  190deg,
 		                  rgba(0, 0, 0, 0) 58%,
-		                  #009c59 0%
+		                  #009c59 0
 	                  );
 	-webkit-background-clip: text;
 }
