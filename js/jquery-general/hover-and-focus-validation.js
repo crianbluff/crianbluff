@@ -20,9 +20,25 @@ $(document).ready(function() {
 		$('#footer-mobile-btn-plus-no-expand').hasClass('footer-mobile-btn-plus-expand') ? $('#ctn-paletts-colors-footer-mobil').removeClass('active') : '';
 	});
 
+	// Función para detectar que paleta de color esta seleccionada, esta se oculta y las demás se muestran
+	function hidePaletteSelected() {
+		if ( !$('body').hasClass('theme-night theme-dark') ) {
+			$('.palette-color-light').addClass('hide').siblings().removeClass('hide');
+		}
+
+		if ( $('body').hasClass('theme-night') ) {
+			$('.palette-color-night').addClass('hide').siblings().removeClass('hide');
+		}
+
+		if ( $('body').hasClass('theme-dark') ) {
+			$('.palette-color-dark').addClass('hide').siblings().removeClass('hide');
+		}
+	}
+
 	// Validación si le dan click al icono de cambiar tema aparezca la burbuja con las paletas de colores que hay
 	$('#ctn-icon-palette-colors').on('click', function() {
 		$('#ctn-paletts-colors').toggleClass('active');
+		hidePaletteSelected();
 	});
 
 	// Validación si le dan click a las paletas de color se cierra la burbuja que las contiene
@@ -33,6 +49,7 @@ $(document).ready(function() {
 	// Validación si le dan click al icono de cambiar tema en footer mobile aparezca la burbuja con las paletas de colores que hay
 	$('#icon-palette-colors-footer-mobil').on('click', function() {
 		$('#ctn-paletts-colors-footer-mobil').toggleClass('active');
+		hidePaletteSelected();
 	});
 
 	// Validación si le dan click a las paletas de color se cierra la burbuja que las contiene footer-mobil
@@ -59,12 +76,20 @@ $(document).ready(function() {
 	// Condicional si la key del tema noche se encuentra en valor 'true', se agrega la clase 'theme-night' en el body
 	// Y se remueve la clase 'theme-dark'
 	if ( typeof(Storage) !== 'undefined' ) {
-		localStorage.getItem('themeNight') == 'true' ? $('body').removeClass('theme-dark').addClass('theme-night') : '';
+		hidePaletteSelected();
+
+		if (localStorage.getItem('themeNight') == 'true') { 
+			$('body').removeClass('theme-dark').addClass('theme-night');
+		}
 		// Condicional si la key del tema oscuro se encuentra en valor 'true', se agrega la clase 'theme-dark' en el body
 		// Y se remueve la clase 'theme-night'
-		localStorage.getItem('themeDark') == 'true' ? $('body').removeClass('theme-night').addClass('theme-dark') : '';
+		if (localStorage.getItem('themeDark') == 'true') {
+			$('body').removeClass('theme-night').addClass('theme-dark')
+		}
 		// Condicional si la key del tema día se encuentra en valor 'true', se remueven las clases 'theme-night y theme-dark' del body
-		localStorage.getItem('themeLight') == 'true' ? $('body').removeClass('theme-night theme-dark') : '';
+		if (localStorage.getItem('themeLight') == 'true') {
+			$('body').removeClass('theme-night theme-dark')
+		}
 	}
 
 });
