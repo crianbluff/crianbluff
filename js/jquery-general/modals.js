@@ -34,6 +34,18 @@ $(document).ready(function() {
 		$('.modal').removeClass('show-modal');
 	}
 
+	// Sirve para cuando le den click por fuera del modal se cierre el modal al que le dieron por fuera
+	$('.modal').on('click', function() {
+		let temp = $(this);
+		temp.removeClass('show-modal');
+		$('body').removeClass('no-scroll-y');
+	});
+
+	// Cuando le dan click dentro del modal evita que se propage el evento que lo cierra al darle por fuera
+	$('.ctn-modal').on('click', function(e) {
+		e.stopPropagation();
+	});
+
 	// Cuando dan click en las paletas de colores captura el texto que esta en el atributo data-palette-color, luego inserta esa palabra capturada en el título y la pregunta del modal de temas
 	$('.paletts-colors, .paletts-colors-footer-mobil').on('click', function() {
 		let captureWord = $(this).attr('data-palette-color');
