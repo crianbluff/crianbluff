@@ -22,17 +22,9 @@ $(document).ready(function() {
 
 	// Función para detectar que paleta de color esta seleccionada, esta se oculta y las demás se muestran
 	function hidePaletteSelected() {
-		if ( !$('body').hasClass('theme-night theme-dark') ) {
-			$('.palette-color-light').addClass('hide').siblings().removeClass('hide');
-		}
-
-		if ( $('body').hasClass('theme-night') ) {
-			$('.palette-color-night').addClass('hide').siblings().removeClass('hide');
-		}
-
-		if ( $('body').hasClass('theme-dark') ) {
-			$('.palette-color-dark').addClass('hide').siblings().removeClass('hide');
-		}
+		!$('body').hasClass('theme-night theme-dark') ? $('.palette-color-light').addClass('hide').siblings().removeClass('hide') : '';
+		$('body').hasClass('theme-night') ? $('.palette-color-night').addClass('hide').siblings().removeClass('hide') : '';
+		$('body').hasClass('theme-dark') ? $('.palette-color-dark').addClass('hide').siblings().removeClass('hide') : '';
 	}
 
 	// Validación si le dan click al icono de cambiar tema aparezca la burbuja con las paletas de colores que hay
@@ -76,8 +68,6 @@ $(document).ready(function() {
 	// Condicional si la key del tema noche se encuentra en valor 'true', se agrega la clase 'theme-night' en el body
 	// Y se remueve la clase 'theme-dark'
 	if ( typeof(Storage) !== 'undefined' ) {
-		hidePaletteSelected();
-
 		if (localStorage.getItem('themeNight') == 'true') { 
 			$('body').removeClass('theme-dark').addClass('theme-night');
 		}

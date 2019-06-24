@@ -42,7 +42,7 @@ $(document).ready(function() {
 	});
 
 	// Cuando le dan click dentro del modal evita que se propage el evento que lo cierra al darle por fuera
-	$('.ctn-modal').on('click', function(e) {
+	$('.ctn-modal, .card-presentation').on('click', function(e) {
 		e.stopPropagation();
 	});
 
